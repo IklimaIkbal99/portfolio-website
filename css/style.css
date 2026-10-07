@@ -1,6 +1,1297 @@
+/* ==========================================================
+   01 — DESIGN VARIABLES
+
+   Global project values live here.
+   Fonts, colors, maximum widths etc.
+
+   Changing a value here can affect the entire website.
+========================================================== */
+
+:root {
+
+  /* ---------- FONT FAMILIES ---------- */
+
+  --font-serif: "Libre Baskerville", serif;
+  --font-sans: "Outfit", sans-serif;
+  --font-mono: "DM Mono", monospace;
+
+
+  /* ---------- COLORS ---------- */
+
+  --color-background: #f7f6f2;
+  --color-text: #111111;
+  --color-muted: #99958d;
+  --color-border: #dedbd4;
+  --color-white: #ffffff;
+
+
+  /* ---------- LAYOUT ---------- */
+
+  --page-padding: 56px;
+  --content-width: 1180px;
+
+}
+
+
+
+/* ==========================================================
+   02 — BASIC RESET
+
+   Removes browser default styling that can create
+   unexpected spacing.
+========================================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
 body {
+
   margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: white;
-  color: black;
+
+  background-color: var(--color-background);
+
+  color: var(--color-text);
+
+  font-family: var(--font-sans);
+
+}
+
+
+a {
+
+  color: inherit;
+
+  text-decoration: none;
+
+}
+
+
+img {
+
+  display: block;
+
+}
+
+
+
+/* ==========================================================
+   03 — TYPOGRAPHY SYSTEM
+
+   These are reusable typography classes.
+
+   Instead of connecting one font size directly to one
+   specific element, we create reusable text styles.
+========================================================== */
+
+
+/* Small DM Mono
+   Used for logo / initials */
+
+.text-mono-small {
+
+  font-family: var(--font-mono);
+
+  font-size: 11px;
+
+  font-weight: 400;
+
+  letter-spacing: 0.08em;
+
+  text-transform: uppercase;
+
+}
+
+
+/* Very small DM Mono
+   Used for status information and scroll */
+
+.text-mono-meta {
+
+  font-family: var(--font-mono);
+
+  font-size: 9px;
+
+  font-weight: 400;
+
+  letter-spacing: 0.08em;
+
+  text-transform: uppercase;
+
+}
+
+
+/* Standard body copy
+   Uses Outfit */
+
+.body-text {
+
+  margin: 0;
+
+  font-family: var(--font-sans);
+
+  font-size: 15px;
+
+  font-weight: 300;
+
+  line-height: 1.55;
+
+}
+
+
+.body-text strong {
+
+  font-weight: 600;
+
+}
+
+
+
+/* ==========================================================
+   04 — HEADER
+========================================================== */
+
+.site-header {
+  width: 100%;
+  height: 72px;
+
+  padding-left: var(--page-padding);
+  padding-right: var(--page-padding);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  /* Keep the navigation visible while scrolling */
+  position: sticky;
+  top: 0;
+
+  /* Make sure it stays above the page content */
+  z-index: 1000;
+
+  /* Prevent content from being visible behind the navbar */
+  background-color: var(--color-background);
+
+  /* Very subtle line from the Figma design */
+  border-bottom: 1px solid var(--color-border);
+}
+
+
+/* Logo / initials on the left */
+
+.site-logo {
+
+  white-space: nowrap;
+
+}
+
+
+/* Navigation container */
+
+.main-nav {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 36px;
+
+}
+
+
+/* Individual navigation items */
+
+.nav-link {
+
+  font-family: var(--font-mono);
+
+  font-size: 12px;
+
+  font-weight: 400;
+
+  letter-spacing: 0.08em;
+
+  text-transform: uppercase;
+
+  transition: opacity 0.2s ease;
+
+}
+
+
+.nav-link:hover {
+
+  opacity: 0.5;
+
+}
+
+
+
+/* ==========================================================
+   05 — HERO SECTION
+
+   The entire first screen.
+========================================================== */
+
+.hero {
+
+  width: 100%;
+
+  min-height: calc(100vh - 72px);
+
+  padding:
+
+    70px
+
+    var(--page-padding)
+
+    28px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+}
+
+
+
+/* ==========================================================
+   06 — PROFILE + AVAILABILITY
+========================================================== */
+
+.hero-profile {
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+}
+
+
+
+/* Circular profile image */
+
+.profile-image {
+
+  width: 100px;
+
+  height: 100px;
+
+  border-radius: 50%;
+
+  object-fit: cover;
+
+}
+
+
+
+/* ----------------------------------------------------------
+   AVAILABILITY BOX
+
+   Important:
+   All three items are inside ONE rectangle.
+
+   AVAILABLE | OPEN TO WORK | MILAN, ITALY
+---------------------------------------------------------- */
+
+
+
+.availability-box {
+
+  margin-top: 20px;
+
+  display: flex;
+
+  align-items: stretch;
+
+  border: 1px solid var(--color-border);
+
+}
+
+
+/* Each individual item */
+
+.availability-item {
+
+  min-height: 28px;
+
+  padding: 0 14px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 7px;
+
+  white-space: nowrap;
+
+}
+
+
+/* Creates vertical divider between items */
+
+.availability-item + .availability-item {
+
+  border-left: 1px solid var(--color-border);
+
+}
+
+
+/* Small dot before AVAILABLE */
+
+.status-dot {
+
+  width: 6px;
+
+  height: 6px;
+
+  background-color: var(--color-text);
+
+  border-radius: 50%;
+
+  flex-shrink: 0;
+
+}
+
+
+
+/* ==========================================================
+   07 — HERO MAIN CONTENT
+
+   Layout:
+
+   NAME        |      DESCRIPTION
+
+   This grid controls the relationship between
+   the name, vertical line and body copy.
+========================================================== */
+
+.hero-main {
+  width: 100%;
+  max-width: var(--content-width);
+
+  margin-top: 70px;
+
+  display: grid;
+
+  /*
+    Left column takes the space it needs.
+    Middle column is the divider.
+    Right column holds the description.
+  */
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    1px
+    minmax(360px, 0.8fr);
+
+  column-gap: 32px;
+
+  align-items: center;
+}
+
+/* ==========================================================
+   08 — HERO NAME
+========================================================== */
+
+.hero-name {
+  width: fit-content;
+
+  justify-self: end;
+}
+
+
+
+/* Main H1 */
+
+.hero-title {
+
+  margin: 0;
+
+  font-family: var(--font-serif);
+
+  font-weight: 400;
+
+  line-height: 0.98;
+
+}
+
+
+
+/* "Iklima Ikbal"
+
+   Kept on one line on desktop.
+*/
+
+.first-name {
+
+  display: block;
+
+  white-space: nowrap;
+
+  font-size: clamp(52px, 5vw, 78px);
+
+}
+
+
+
+/* "Türköz"
+
+   Important:
+   It is aligned to the RIGHT side of
+   the same name container.
+*/
+
+.last-name {
+
+  display: block;
+
+  margin-top: 12px;
+
+  text-align: right;
+
+  font-size: clamp(48px, 4.6vw, 72px);
+
+  font-style: italic;
+
+  color: var(--color-muted);
+
+}
+
+
+
+/* ==========================================================
+   09 — VERTICAL DIVIDER
+
+   The line between name and description.
+========================================================== */
+
+.hero-divider {
+
+  width: 1px;
+
+  height: 134px;
+
+  background-color: var(--color-border);
+
+}
+
+
+
+/* ==========================================================
+   10 — HERO DESCRIPTION
+========================================================== */
+
+.hero-description {
+
+  max-width: 410px;
+
+}
+
+
+
+/* ==========================================================
+   11 — HERO ACTION BUTTONS
+========================================================== */
+
+.hero-actions {
+
+  margin-top: 52px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+}
+
+
+
+/* Shared button properties */
+
+.button {
+
+  min-height: 42px;
+
+  padding: 0 22px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 12px;
+
+  font-family: var(--font-mono);
+
+  font-size: 9px;
+
+  font-weight: 400;
+
+  letter-spacing: 0.08em;
+
+  text-transform: uppercase;
+
+  transition:
+
+    opacity 0.2s ease,
+
+    background-color 0.2s ease;
+
+}
+
+
+
+/* Black button */
+
+.button-primary {
+
+  background-color: var(--color-text);
+
+  color: var(--color-white);
+
+}
+
+
+
+/* White / outlined button */
+
+.button-secondary {
+
+  border: 1px solid var(--color-border);
+
+}
+
+
+
+/* SVG icon inside button */
+
+.button-icon {
+
+  width: 12px;
+
+  height: 12px;
+
+}
+
+
+
+/* Button hover */
+
+.button:hover {
+
+  opacity: 0.65;
+
+}
+
+
+
+/* ==========================================================
+   12 — SCROLL INDICATOR
+========================================================== */
+
+.scroll-indicator {
+
+  margin-top: auto;
+
+  padding-top: 50px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  transition: opacity 0.2s ease;
+
+}
+
+
+.scroll-indicator:hover {
+
+  opacity: 0.5;
+
+}
+
+
+/* Down arrow SVG */
+
+.scroll-icon {
+
+  width: 13px;
+
+  height: 13px;
+
+}
+
+
+
+/* ==========================================================
+   13 — TABLET / SMALL SCREEN
+
+   We will improve responsive behavior later.
+   For now this prevents the desktop design from breaking.
+========================================================== */
+
+@media (max-width: 900px) {
+
+  :root {
+
+    --page-padding: 28px;
+
+  }
+
+
+  .hero-main {
+
+    grid-template-columns: 1fr;
+
+    max-width: 640px;
+
+    row-gap: 30px;
+
+  }
+
+
+  .hero-divider {
+
+    width: 100%;
+
+    height: 1px;
+
+  }
+
+
+  .hero-description {
+
+    max-width: 100%;
+
+  }
+
+
+  .first-name {
+
+    white-space: normal;
+
+  }
+
+  .projects-header {
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 24px;
+}
+
+
+.project-content {
+
+  grid-template-columns: 1fr;
+
+  row-gap: 28px;
+
+}
+
+}
+
+
+
+/* ==========================================================
+   14 — MOBILE
+
+   This is only a basic first version.
+   We will design the real mobile layout later.
+========================================================== */
+
+@media (max-width: 600px) {
+
+  :root {
+
+    --page-padding: 20px;
+
+  }
+
+
+  .site-header {
+
+    height: auto;
+
+    padding-top: 20px;
+
+    padding-bottom: 20px;
+
+  }
+
+
+  .main-nav {
+
+    gap: 15px;
+
+  }
+
+
+  .nav-link {
+
+    font-size: 7px;
+
+  }
+
+
+  .hero {
+
+    padding-top: 50px;
+
+  }
+
+
+  .availability-item {
+
+    padding-left: 8px;
+
+    padding-right: 8px;
+
+  }
+
+
+  .text-mono-meta {
+
+    font-size: 7px;
+
+  }
+
+
+  .first-name {
+
+    font-size: 46px;
+
+  }
+
+
+  .last-name {
+
+    font-size: 42px;
+
+  }
+
+.projects-section {
+
+  padding-top: 80px;
+
+}
+
+
+.project-filters {
+
+  width: 100%;
+
+  flex-wrap: wrap;
+
+}
+
+
+.project-meta {
+
+  padding-left: 14px;
+  padding-right: 14px;
+
+}
+
+
+.project-title-row {
+
+  padding-left: 14px;
+  padding-right: 14px;
+
+}
+
+
+.project-content {
+
+  padding-left: 14px;
+  padding-right: 14px;
+
+}
+
+}
+
+/* ==========================================================
+   15 — SELECTED PROJECTS SECTION
+========================================================== */
+
+.projects-section {
+
+  width: 100%;
+
+  padding:
+    120px
+    var(--page-padding);
+
+}
+
+
+
+/* Main content width
+
+   We reuse the same width logic used in the hero.
+*/
+
+.section-container {
+
+  width: 100%;
+
+  max-width: var(--content-width);
+
+  margin: 0 auto;
+
+}
+
+
+
+/* ==========================================================
+   16 — PROJECTS HEADER
+
+   Left:
+   [02] WORK
+   Selected Projects
+
+   Right:
+   Filter buttons
+========================================================== */
+
+.projects-header {
+
+  display: flex;
+
+  align-items: flex-end;
+
+  justify-content: space-between;
+
+  margin-bottom: 48px;
+
+}
+
+
+
+/* Small number + WORK */
+
+.section-label {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 14px;
+
+}
+
+
+
+/* Small outlined number */
+
+.section-number {
+
+  padding: 5px 8px;
+
+  border: 1px solid var(--color-border);
+
+}
+
+
+
+/* Main section title */
+
+.section-title {
+
+  margin: 0;
+
+  font-family: var(--font-serif);
+
+  font-size: 36px;
+
+  font-weight: 400;
+
+  line-height: 1.2;
+
+}
+
+
+
+/* ==========================================================
+   17 — FILTER BUTTONS
+========================================================== */
+
+.project-filters {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+}
+
+
+
+/* Shared filter button */
+
+.filter-button {
+
+  min-height: 30px;
+
+  padding: 0 16px;
+
+  border: 1px solid var(--color-border);
+
+  background-color: transparent;
+
+  color: var(--color-text);
+
+  font-family: var(--font-mono);
+
+  font-size: 9px;
+
+  letter-spacing: 0.06em;
+
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+}
+
+
+
+/* Active filter */
+
+.filter-button.active {
+
+  background-color: var(--color-text);
+
+  color: var(--color-white);
+
+  border-color: var(--color-text);
+
+}
+
+
+
+/* ==========================================================
+   18 — PROJECT LIST
+========================================================== */
+
+.project-list {
+
+  width: 100%;
+
+  border-top: 1px solid var(--color-border);
+
+  border-left: 1px solid var(--color-border);
+
+  border-right: 1px solid var(--color-border);
+
+}
+
+
+
+/* ==========================================================
+   19 — PROJECT CARD
+
+   Each project uses the SAME HTML structure.
+
+   This is one of the most important reusable patterns
+   in this section.
+========================================================== */
+
+.project-card {
+
+  width: 100%;
+
+  border-bottom: 1px solid var(--color-border);
+
+}
+
+
+
+/* ==========================================================
+   20 — PROJECT META ROW
+
+   Example:
+
+   01 | UI/UX DESIGN                ● DELIVERED 2025
+========================================================== */
+
+.project-meta {
+
+  min-height: 46px;
+
+  padding:
+    0
+    20px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  border-bottom: 1px solid var(--color-border);
+
+  
+
+}
+
+
+
+/* Left metadata */
+
+.project-category {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+}
+
+
+
+/* Small vertical line */
+
+.meta-divider {
+
+  width: 1px;
+
+  height: 15px;
+
+  background-color: var(--color-border);
+
+}
+
+
+
+/* Right metadata */
+
+.project-status {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+}
+
+
+
+/* ==========================================================
+   21 — PROJECT TITLE
+========================================================== */
+
+.project-title-row {
+
+  padding:
+    22px
+    20px;
+
+  border-bottom: 1px solid var(--color-border);
+
+}
+
+
+
+/* Project title uses Libre Baskerville */
+
+.project-title {
+
+  margin: 0;
+
+  font-family: var(--font-serif);
+
+  font-size: 28px;
+
+  font-weight: 400;
+
+}
+
+
+
+/* ==========================================================
+   22 — PROJECT CONTENT
+
+   Left:
+   description + button
+
+   Right:
+   tags
+========================================================== */
+
+.project-content {
+
+  padding:
+    24px
+    20px
+    28px;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1.6fr)
+    minmax(280px, 0.8fr);
+
+  column-gap: 48px;
+
+}
+
+
+
+/* ==========================================================
+   23 — PROJECT DESCRIPTION
+========================================================== */
+
+.project-description {
+
+  max-width: 700px;
+
+}
+
+
+
+.project-description p {
+
+  margin:
+    0
+    0
+    24px;
+
+  font-family: var(--font-sans);
+
+  font-size: 14px;
+
+  font-weight: 300;
+
+  line-height: 1.55;
+
+  color: #6f6b66;
+
+}
+
+
+
+/* ==========================================================
+   24 — PROJECT LINK BUTTON
+========================================================== */
+
+.project-link {
+
+  min-height: 38px;
+
+  padding: 0 16px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  border: 1px solid var(--color-border);
+
+  font-family: var(--font-mono);
+
+  font-size: 9px;
+
+  letter-spacing: 0.08em;
+
+  text-transform: uppercase;
+
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+
+}
+
+
+
+/* Project link SVG */
+
+.project-link-icon {
+
+  width: 11px;
+
+  height: 11px;
+
+}
+
+
+
+/* Hover */
+
+.project-link:hover {
+
+  background-color: var(--color-text);
+
+  color: var(--color-white);
+
+}
+
+
+
+/* ==========================================================
+   25 — PROJECT TAGS
+========================================================== */
+
+.project-tags {
+
+  display: flex;
+
+  align-content: flex-start;
+
+  align-items: flex-start;
+
+  flex-wrap: wrap;
+
+  gap: 6px;
+
+}
+
+
+
+/* Individual tag */
+
+.project-tag {
+
+  min-height: 27px;
+
+  padding:
+    0
+    10px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  border: 1px solid var(--color-border);
+
+  font-family: var(--font-mono);
+
+  font-size: 8px;
+
+  letter-spacing: 0.05em;
+
+}
+
+.project-meta {
+  background-color: #F0EFEA;
 }

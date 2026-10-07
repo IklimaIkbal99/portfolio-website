@@ -1,16 +1,694 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
 
-  <link rel="stylesheet" href="css/style.css">
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Iklima Ikbal Türköz — Product Designer</title>
+
+
+  <!-- =========================================
+       GOOGLE FONTS
+       DM Mono = labels, navigation, buttons
+       Outfit = body text
+       Libre Baskerville = large serif titles
+  ========================================== -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Outfit:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  >
+
+
+  <!-- Main CSS file -->
+
+  <link
+    rel="stylesheet"
+    href="css/style.css"
+  >
+
 </head>
+
+
 
 <body>
 
-  <h1>Hello World</h1>
+
+  <!-- =========================================
+       HEADER / NAVIGATION
+  ========================================== -->
+
+  <header class="site-header">
+
+    <a
+      href="#home"
+      class="site-logo text-mono-small"
+    >
+      [ IIT ]
+    </a>
+
+
+    <nav class="main-nav">
+
+      <a
+        href="#projects"
+        class="nav-link"
+      >
+        Work
+      </a>
+
+      <a
+        href="#experience"
+        class="nav-link"
+      >
+        Experience
+      </a>
+
+      <a
+        href="#about"
+        class="nav-link"
+      >
+        About
+      </a>
+
+      <a
+        href="#contact"
+        class="nav-link"
+      >
+        Contact
+      </a>
+
+    </nav>
+
+  </header>
+
+
+
+  <!-- =========================================
+       MAIN PAGE CONTENT
+  ========================================== -->
+
+  <main>
+
+
+    <!-- =========================================
+         HERO SECTION
+    ========================================== -->
+
+    <section
+      class="hero"
+      id="home"
+    >
+
+
+      <!-- =========================
+           PROFILE AREA
+           Photo + status information
+      ========================== -->
+
+      <div class="hero-profile">
+
+        <img
+          src="images/profile.jpeg"
+          alt="Portrait of Iklima Ikbal Türköz"
+          class="profile-image"
+        >
+
+
+        <!--
+          All three status labels are inside ONE box.
+          The vertical lines are created with CSS.
+        -->
+
+        <div class="availability-box text-mono-meta">
+
+          <div class="availability-item">
+
+            <span class="status-dot"></span>
+
+            <span>Available</span>
+
+          </div>
+
+
+          <div class="availability-item">
+
+            Open to Work
+
+          </div>
+
+
+          <div class="availability-item">
+
+            Milan, Italy
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- =========================
+           HERO MAIN CONTENT
+           Name | divider | description
+      ========================== -->
+
+      <div class="hero-main">
+
+
+        <!-- LEFT SIDE: NAME -->
+
+        <div class="hero-name">
+
+          <h1 class="hero-title">
+
+            <span class="first-name">
+              Iklima Ikbal
+            </span>
+
+            <span class="last-name">
+              Türköz
+            </span>
+
+          </h1>
+
+        </div>
+
+
+
+        <!-- CENTER VERTICAL LINE -->
+
+        <div
+          class="hero-divider"
+          aria-hidden="true"
+        ></div>
+
+
+
+        <!-- RIGHT SIDE: INTRODUCTION -->
+
+        <div class="hero-description">
+
+          <p class="body-text">
+
+            Product Designer specialized in UI/UX,
+            <strong>gamification</strong>,
+            and <strong>concept development</strong>.
+
+            I combine strong visual thinking with
+            <strong>technical prototyping skills</strong>
+            to turn ideas into
+            <strong>engaging</strong>,
+            functional, and
+            <strong>well-structured</strong>
+            digital experiences.
+
+          </p>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- =========================
+           HERO BUTTONS
+      ========================== -->
+
+      <div class="hero-actions">
+
+
+        <!-- Primary button -->
+
+        <a
+          href="#projects"
+          class="button button-primary"
+        >
+
+          <span>View Work</span>
+
+          <img
+            src="images/icons/arrow-up-right.svg"
+            alt=""
+            class="button-icon"
+          >
+
+        </a>
+
+
+
+        <!-- Secondary button -->
+
+        <a
+          href="#contact"
+          class="button button-secondary"
+        >
+
+          <span>Get in Touch</span>
+
+        </a>
+
+      </div>
+
+
+
+      <!-- =========================
+           SCROLL INDICATOR
+      ========================== -->
+
+      <a
+        href="#projects"
+        class="scroll-indicator text-mono-meta"
+      >
+
+        <img
+          src="images/icons/arrow-down.svg"
+          alt=""
+          class="scroll-icon"
+        >
+
+        <span>Scroll</span>
+
+      </a>
+
+
+    </section>
+
+
+<!-- =========================================
+     SELECTED PROJECTS SECTION
+========================================== -->
+
+<section
+  class="projects-section"
+  id="projects"
+>
+
+  <div class="section-container">
+
+
+    <!-- =====================================
+         SECTION HEADER
+         Small label + title + filters
+    ====================================== -->
+
+    <div class="projects-header">
+
+      <div class="section-heading">
+
+        <div class="section-label text-mono-meta">
+
+          <span class="section-number">[01]</span>
+
+          <span>Work</span>
+
+        </div>
+
+
+        <h2 class="section-title">
+          Selected Projects
+        </h2>
+
+      </div>
+
+
+
+      <!--
+        These buttons are visual only for now.
+        Later we can add JavaScript filtering.
+      -->
+
+      <div class="project-filters">
+
+        <button
+          class="filter-button active"
+          type="button"
+        >
+          All
+        </button>
+
+        <button
+          class="filter-button"
+          type="button"
+        >
+          UI/UX Design
+        </button>
+
+        <button
+          class="filter-button"
+          type="button"
+        >
+          Game Design
+        </button>
+
+      </div>
+
+    </div>
+
+
+
+    <!-- =====================================
+         PROJECT LIST
+    ====================================== -->
+
+    <div class="project-list">
+
+
+      <!-- =================================
+           PROJECT 01 — BREATHMENT
+      ================================== -->
+
+      <article class="project-card">
+
+        <!-- Top metadata row -->
+
+        <div class="project-meta">
+
+          <div class="project-category text-mono-meta">
+
+            <span>01</span>
+
+            <span class="meta-divider"></span>
+
+            <span>UI/UX Design</span>
+
+          </div>
+
+
+          <div class="project-status text-mono-meta">
+
+            <span class="status-dot"></span>
+
+            <span>Delivered</span>
+
+            <span>2025</span>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- Project title -->
+
+        <div class="project-title-row">
+
+          <h3 class="project-title">
+            Breathment
+          </h3>
+
+        </div>
+
+
+
+        <!-- Project description + tags -->
+
+        <div class="project-content">
+
+          <div class="project-description">
+
+            <p>
+
+              Breathment advances digital therapies for people with
+              chronic respiratory conditions using AI-supported health
+              solutions.
+
+              I joined as UI/UX Designer and worked across the full
+              product, from the patient-facing app to internal admin
+              tools and communication systems.
+
+            </p>
+
+
+            <a
+              href="#"
+              class="project-link"
+            >
+
+              <span>View Projects</span>
+
+              <img
+                src="images/icons/arrow-up-right.svg"
+                alt=""
+                class="project-link-icon"
+              >
+
+            </a>
+
+          </div>
+
+
+
+          <!-- Project tags -->
+
+          <div class="project-tags">
+
+            <span class="project-tag">
+              Product Design
+            </span>
+
+            <span class="project-tag">
+              Prototyping
+            </span>
+
+            <span class="project-tag">
+              AI
+            </span>
+
+            <span class="project-tag">
+              Character Design
+            </span>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- =================================
+           PROJECT 02 — SERICA
+      ================================== -->
+
+      <article class="project-card">
+
+        <div class="project-meta">
+
+          <div class="project-category text-mono-meta">
+
+            <span>02</span>
+
+            <span class="meta-divider"></span>
+
+            <span>UI/UX Design</span>
+
+          </div>
+
+
+          <div class="project-status text-mono-meta">
+
+            <span class="status-dot"></span>
+
+            <span>Delivered</span>
+
+            <span>2025</span>
+
+          </div>
+
+        </div>
+
+
+        <div class="project-title-row">
+
+          <h3 class="project-title">
+            Serica
+          </h3>
+
+        </div>
+
+
+        <div class="project-content">
+
+          <div class="project-description">
+
+            <p>
+
+              Serica highlights the local community around the museum,
+              made of artisans, merchants, and museums, connecting them
+              with tourists through the historical, economic, and
+              cultural resources related to the city's silk heritage.
+
+            </p>
+
+
+            <a
+              href="#"
+              class="project-link"
+            >
+
+              <span>View Projects</span>
+
+              <img
+                src="images/icons/arrow-up-right.svg"
+                alt=""
+                class="project-link-icon"
+              >
+
+            </a>
+
+          </div>
+
+
+          <div class="project-tags">
+
+            <span class="project-tag">
+              Museum UX
+            </span>
+
+            <span class="project-tag">
+              Design System
+            </span>
+
+            <span class="project-tag">
+              Brand Guidelines
+            </span>
+
+            <span class="project-tag">
+              Research
+            </span>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- =================================
+           PROJECT 03 — CITY DIALOGUE
+      ================================== -->
+
+      <article class="project-card">
+
+        <div class="project-meta">
+
+          <div class="project-category text-mono-meta">
+
+            <span>03</span>
+
+            <span class="meta-divider"></span>
+
+            <span>UI/UX Design</span>
+
+          </div>
+
+
+          <div class="project-status text-mono-meta">
+
+            <span class="status-dot"></span>
+
+            <span>Delivered</span>
+
+            <span>2024</span>
+
+          </div>
+
+        </div>
+
+
+        <div class="project-title-row">
+
+          <h3 class="project-title">
+            City Dialogue
+          </h3>
+
+        </div>
+
+
+        <div class="project-content">
+
+          <div class="project-description">
+
+            <p>
+
+              CityDialogue was developed during a workshop in
+              collaboration with NetZeroCities, within the European
+              Union context, responding to a brief for a digital
+              platform that could strengthen knowledge exchange around
+              climate-neutral cities.
+
+            </p>
+
+
+            <a
+              href="#"
+              class="project-link"
+            >
+
+              <span>View Projects</span>
+
+              <img
+                src="images/icons/arrow-up-right.svg"
+                alt=""
+                class="project-link-icon"
+              >
+
+            </a>
+
+          </div>
+
+
+          <div class="project-tags">
+
+            <span class="project-tag">
+              NetZeroCities
+            </span>
+
+            <span class="project-tag">
+              European Union
+            </span>
+
+            <span class="project-tag">
+              Web Design
+            </span>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+  </main>
+
 
 </body>
+
 </html>
