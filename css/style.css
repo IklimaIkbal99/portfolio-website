@@ -883,31 +883,6 @@ img {
 
 
 
-/* Small number + WORK */
-
-.section-label {
-
-  display: flex;
-
-  align-items: center;
-
-  gap: 12px;
-
-  margin-bottom: 14px;
-
-}
-
-
-
-/* Small outlined number */
-
-.section-number {
-
-  padding: 5px 8px;
-
-  border: 1px solid var(--color-border);
-
-}
 
 
 
@@ -961,7 +936,7 @@ img {
 
   font-family: var(--font-mono);
 
-  font-size: 9px;
+  font-size: 12px;
 
   letter-spacing: 0.06em;
 
@@ -1286,7 +1261,7 @@ img {
 
   font-family: var(--font-mono);
 
-  font-size: 8px;
+  font-size: 10px;
 
   letter-spacing: 0.05em;
 
@@ -1295,3 +1270,4 @@ img {
 .project-meta {
   background-color: #F0EFEA;
 }
+
