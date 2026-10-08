@@ -24,6 +24,7 @@
   --color-border: #dedbd4;
   --color-white: #ffffff;
   --color-card-header: #F0EFEA;
+  --color-text-gray: #767676;
 
 
   /* ---------- LAYOUT ---------- */
@@ -466,7 +467,7 @@ img {
 
   font-style: italic;
 
-  color: var(--color-muted);
+  color: var(--color-text-gray);
 
 }
 
@@ -715,7 +716,21 @@ img {
   max-width: 100%;
 }
 
+.contact-grid {
+  grid-template-columns: 1fr;
 
+  row-gap: 60px;
+}
+
+
+.contact-intro {
+  max-width: 650px;
+}
+
+
+.contact-card {
+  max-width: 650px;
+}
 
 }
 
@@ -858,6 +873,285 @@ img {
   flex-direction: column;
 
   gap: 8px;
+}
+
+/* ==========================================================
+   44 — CONTACT SECTION
+========================================================== */
+
+.contact-section {
+  width: 100%;
+
+  padding:
+    150px
+    var(--page-padding);
+}
+
+
+
+/* ==========================================================
+   45 — CONTACT MAIN GRID
+
+   LEFT:
+   Big message + description
+
+   RIGHT:
+   Contact information card
+========================================================== */
+
+.contact-grid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 0.9fr)
+    minmax(480px, 1.1fr);
+
+  column-gap: 100px;
+
+  align-items: center;
+}
+
+
+
+/* ==========================================================
+   46 — CONTACT INTRO
+========================================================== */
+
+.contact-intro {
+  max-width: 560px;
+}
+
+
+
+/* Large title container */
+
+.contact-title {
+  margin: 0;
+
+  font-family: var(--font-serif);
+
+  font-weight: 400;
+
+  line-height: 1;
+}
+
+
+
+/* "Let's work" */
+
+.contact-title-main {
+  display: block;
+
+  font-size: clamp(58px, 5.2vw, 84px);
+}
+
+
+
+/* "together." */
+
+.contact-title-italic {
+  display: block;
+
+  margin-top: 12px;
+
+  font-size: clamp(54px, 4.9vw, 78px);
+
+  font-style: italic;
+
+  color: var(--color-muted);
+}
+
+
+
+/* Supporting copy */
+
+.contact-description {
+  max-width: 540px;
+
+  margin:
+    48px
+    0
+    0;
+
+  font-family: var(--font-sans);
+
+  font-size: 15px;
+
+  font-weight: 300;
+
+  line-height: 1.6;
+
+  color: #6f6b66;
+}
+
+
+
+/* ==========================================================
+   47 — CONTACT CARD
+========================================================== */
+
+.contact-card {
+  width: 100%;
+
+  border:
+    1px
+    solid
+    var(--color-border);
+}
+
+
+
+/* ==========================================================
+   48 — CONTACT CARD HEADER
+
+   REACH OUT                      ● AVAILABLE
+========================================================== */
+
+.contact-card-header {
+  min-height: 54px;
+
+  padding:
+    0
+    20px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  background-color: var(--color-card-header);
+
+  border-bottom:
+    1px
+    solid
+    var(--color-border);
+
+  font-family: var(--font-mono);
+
+  font-size: 10px;
+
+  letter-spacing: 0.08em;
+
+  text-transform: uppercase;
+}
+
+
+
+.contact-availability {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+}
+
+
+
+/* ==========================================================
+   49 — CONTACT INFORMATION ROWS
+========================================================== */
+
+.contact-row {
+  min-height: 78px;
+
+  padding:
+    0
+    20px;
+
+  display: grid;
+
+  grid-template-columns:
+    130px
+    1fr;
+
+  align-items: center;
+}
+
+
+
+/* Line between contact rows */
+
+.contact-row + .contact-row {
+  border-top:
+    1px
+    solid
+    var(--color-border);
+}
+
+
+
+/* Left label */
+
+.contact-label {
+  font-family: var(--font-mono);
+
+  font-size: 10px;
+
+  font-weight: 500;
+
+  letter-spacing: 0.06em;
+
+  text-transform: uppercase;
+}
+
+
+
+/* Right information */
+
+.contact-value {
+  justify-self: end;
+
+  font-family: var(--font-sans);
+
+  font-size: 15px;
+
+  font-weight: 400;
+
+  color: var(--color-text);
+
+  transition: opacity 0.2s ease;
+}
+
+
+
+/* Email / phone / LinkedIn hover */
+
+.contact-value:hover {
+  opacity: 0.55;
+}
+
+
+
+/* ==========================================================
+   50 — LINKEDIN LINK + SVG
+========================================================== */
+
+.contact-link {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 9px;
+}
+
+
+
+.contact-link-icon {
+  width: 12px;
+  height: 12px;
+
+  fill: none;
+
+  stroke: currentColor;
+
+  stroke-width: 1.08333;
+
+  stroke-linecap: round;
+
+  stroke-linejoin: round;
+
+  flex-shrink: 0;
 }
 
 }
@@ -2001,4 +2295,283 @@ img {
 .knowledge-content {
   padding:
     10px;
+}
+
+/* ==========================================================
+   44 — CONTACT SECTION
+========================================================== */
+
+.contact-section {
+  width: 100%;
+
+  padding:
+    150px
+    var(--page-padding);
+}
+
+
+
+/* ==========================================================
+   45 — CONTACT MAIN GRID
+
+   LEFT:
+   Big message + description
+
+   RIGHT:
+   Contact information card
+========================================================== */
+
+.contact-grid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 0.9fr)
+    minmax(480px, 1.1fr);
+
+  column-gap: 100px;
+
+  align-items: center;
+}
+
+
+
+/* ==========================================================
+   46 — CONTACT INTRO
+========================================================== */
+
+.contact-intro {
+  max-width: 560px;
+}
+
+
+
+/* Large title container */
+
+.contact-title {
+  margin: 0;
+
+  font-family: var(--font-serif);
+
+  font-weight: 400;
+
+  line-height: 1;
+}
+
+
+
+/* "Let's work" */
+
+.contact-title-main {
+  display: block;
+
+  font-size: clamp(58px, 5.2vw, 84px);
+}
+
+
+
+/* "together." */
+
+.contact-title-italic {
+  display: block;
+
+  margin-top: 12px;
+
+  font-size: clamp(54px, 4.9vw, 78px);
+
+  font-style: italic;
+
+  color: var(--color-muted);
+}
+
+
+
+/* Supporting copy */
+
+.contact-description {
+  max-width: 540px;
+
+  margin:
+    48px
+    0
+    0;
+
+  font-family: var(--font-sans);
+
+  font-size: 15px;
+
+  font-weight: 300;
+
+  line-height: 1.6;
+
+  color: #6f6b66;
+}
+
+
+
+/* ==========================================================
+   47 — CONTACT CARD
+========================================================== */
+
+.contact-card {
+  width: 100%;
+
+  border:
+    1px
+    solid
+    var(--color-border);
+}
+
+
+
+/* ==========================================================
+   48 — CONTACT CARD HEADER
+
+   REACH OUT                      ● AVAILABLE
+========================================================== */
+
+.contact-card-header {
+  min-height: 54px;
+
+  padding:
+    0
+    20px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  background-color: var(--color-card-header);
+
+  border-bottom:
+    1px
+    solid
+    var(--color-border);
+
+  font-family: var(--font-mono);
+
+  font-size: 10px;
+
+  letter-spacing: 0.08em;
+
+  text-transform: uppercase;
+}
+
+
+
+.contact-availability {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+}
+
+
+
+/* ==========================================================
+   49 — CONTACT INFORMATION ROWS
+========================================================== */
+
+.contact-row {
+  min-height: 78px;
+
+  padding:
+    0
+    20px;
+
+  display: grid;
+
+  grid-template-columns:
+    130px
+    1fr;
+
+  align-items: center;
+}
+
+
+
+/* Line between contact rows */
+
+.contact-row + .contact-row {
+  border-top:
+    1px
+    solid
+    var(--color-border);
+}
+
+
+
+/* Left label */
+
+.contact-label {
+  font-family: var(--font-mono);
+
+  font-size: 10px;
+
+  font-weight: 500;
+
+  letter-spacing: 0.06em;
+
+  text-transform: uppercase;
+}
+
+
+
+/* Right information */
+
+.contact-value {
+  justify-self: end;
+
+  font-family: var(--font-sans);
+
+  font-size: 15px;
+
+  font-weight: 400;
+
+  color: var(--color-text);
+
+  transition: opacity 0.2s ease;
+}
+
+
+
+/* Email / phone / LinkedIn hover */
+
+.contact-value:hover {
+  opacity: 0.55;
+}
+
+
+
+/* ==========================================================
+   50 — LINKEDIN LINK + SVG
+========================================================== */
+
+.contact-link {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 9px;
+}
+
+
+
+.contact-link-icon {
+  width: 12px;
+  height: 12px;
+
+  fill: none;
+
+  stroke: currentColor;
+
+  stroke-width: 1.08333;
+
+  stroke-linecap: round;
+
+  stroke-linejoin: round;
+
+  flex-shrink: 0;
 }
