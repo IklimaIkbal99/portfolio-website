@@ -1,11 +1,10 @@
-/* ==========================================================
+/* 
    01 — DESIGN VARIABLES
 
-   Global project values live here.
-   Fonts, colors, maximum widths etc.
-
-   Changing a value here can affect the entire website.
-========================================================== */
+    Proje değerleri burada.
+    Yazı tipleri, renkler, maksimum genişlikler vb.
+   Buradaki bir değeri değiştirmek tüm web sitesini etkileyebilir.
+ */
 
 :root {
 
@@ -36,12 +35,10 @@
 
 
 
-/* ==========================================================
-   02 — BASIC RESET
-
-   Removes browser default styling that can create
-   unexpected spacing.
-========================================================== */
+/*    02 — BASIC RESET
+    Beklenmedik boşluklara yol açabilen tarayıcı varsayılan stillerini kaldırır. 
+    Intten bak.   
+ */
 
 * {
     box-sizing: border-box;
@@ -83,24 +80,23 @@ img {
 
 
 
-/* ==========================================================
-   03 — TYPOGRAPHY SYSTEM
+/*
+   TYPOGRAPHY SYSTEM
 
-   These are reusable typography classes.
-
-   Instead of connecting one font size directly to one
-   specific element, we create reusable text styles.
-========================================================== */
+    Bunlar, yeniden kullanılabilir tipografi sınıflarıdır.
+   Tek bir yazı tipi boyutunu doğrudan belirli bir öğeye
+   bağlamak yerine, yeniden kullanılabilir metin stilleri oluşturuyoruz.
+ */
 
 
 /* Small DM Mono
-   Used for logo / initials */
+   kullanılan yer logo / initials */
 
 .text-mono-small {
 
     font-family: var(--font-mono);
 
-    font-size: 11px;
+    font-size: 12px;
 
     font-weight: 400;
 
@@ -112,13 +108,13 @@ img {
 
 
 /* Very small DM Mono
-   Used for status information and scroll */
+   kullan status information ve scroll */
 
 .text-mono-meta {
 
     font-family: var(--font-mono);
 
-    font-size: 9px;
+    font-size: 12px;
 
     font-weight: 400;
 
@@ -130,7 +126,7 @@ img {
 
 
 /* Standard body copy
-   Uses Outfit */
+   kullanılan Outfit */
 
 .body-text {
 
@@ -138,7 +134,7 @@ img {
 
     font-family: var(--font-sans);
 
-    font-size: 15px;
+    font-size: 16px;
 
     font-weight: 300;
 
@@ -155,9 +151,10 @@ img {
 
 
 
-/* ==========================================================
-   04 — HEADER
-========================================================== */
+/* 
+   HEADER
+ */
+
 
 .site-header {
     width: 100%;
@@ -185,7 +182,7 @@ img {
 }
 
 
-/* Logo / initials on the left */
+/* Logo / initials solda */
 
 .site-logo {
 
@@ -234,11 +231,11 @@ img {
 
 
 
-/* ==========================================================
-   05 — HERO SECTION
+/* 
+  HERO SECTION
 
-   The entire first screen.
-========================================================== */
+   İlk section bütün
+ */
 
 .hero {
 
@@ -260,9 +257,9 @@ img {
 
 
 
-/* ==========================================================
-   06 — PROFILE + AVAILABILITY
-========================================================== */
+/* 
+   PROFILE + AVAILABILITY
+ */
 
 .hero-profile {
 
@@ -276,7 +273,7 @@ img {
 
 
 
-/* Circular profile image */
+/* Daire profile resmi */
 
 .profile-image {
 
@@ -292,14 +289,12 @@ img {
 
 
 
-/* ----------------------------------------------------------
+/* 
    AVAILABILITY BOX
 
-   Important:
-   All three items are inside ONE rectangle.
-
+   3 değer tek kutuda simgeyle ayır:
    AVAILABLE | OPEN TO WORK | MILAN, ITALY
----------------------------------------------------------- */
+ */
 
 
 
@@ -316,7 +311,7 @@ img {
 }
 
 
-/* Each individual item */
+/* her değer özelde */
 
 .availability-item {
 
@@ -337,7 +332,7 @@ img {
 }
 
 
-/* Creates vertical divider between items */
+/* Orta bölücü */
 
 .availability-item+.availability-item {
 
@@ -346,7 +341,7 @@ img {
 }
 
 
-/* Small dot before AVAILABLE */
+/* küçük nokta */
 
 .status-dot {
 
@@ -364,16 +359,16 @@ img {
 
 
 
-/* ==========================================================
-   07 — HERO MAIN CONTENT
+/* 
+   HERO MAIN CONTENT
 
    Layout:
 
    NAME        |      DESCRIPTION
 
-   This grid controls the relationship between
-   the name, vertical line and body copy.
-========================================================== */
+bu grid sistemi isim ve secriptionı ayırıyo
+
+   */
 
 .hero-main {
     width: 100%;
@@ -384,9 +379,9 @@ img {
     display: grid;
 
     /*
-    Left column takes the space it needs.
-    Middle column is the divider.
-    Right column holds the description.
+    Sol sütun, ihtiyaç duyduğu alanı kaplar.
+    Orta sütun ayırıcıdır.
+    Sağ sütun açıklamayı içerir.
   */
 
     grid-template-columns:
@@ -397,9 +392,9 @@ img {
     align-items: center;
 }
 
-/* ==========================================================
-   08 — HERO NAME
-========================================================== */
+/* 
+   HERO NAME
+ */
 
 .hero-name {
     width: fit-content;
@@ -444,9 +439,7 @@ img {
 
 /* "Türköz"
 
-   Important:
-   It is aligned to the RIGHT side of
-   the same name container.
+ Aynı containerda sağa dayalı o yüzden ayrı bir item gibi
 */
 
 .last-name {
@@ -467,11 +460,9 @@ img {
 
 
 
-/* ==========================================================
-   09 — VERTICAL DIVIDER
-
-   The line between name and description.
-========================================================== */
+/* 
+    VERTICAL DIVIDER ortadaki çizgi
+ */
 
 .hero-divider {
 
@@ -485,9 +476,9 @@ img {
 
 
 
-/* ==========================================================
-   10 — HERO DESCRIPTION
-========================================================== */
+/* 
+ HERO DESCRIPTION
+ */
 
 .hero-description {
 
@@ -497,9 +488,9 @@ img {
 
 
 
-/* ==========================================================
-   11 — HERO ACTION BUTTONS
-========================================================== */
+/* 
+   HERO ACTION BUTTONS
+ */
 
 .hero-actions {
 
@@ -533,7 +524,7 @@ img {
 
     font-family: var(--font-mono);
 
-    font-size: 9px;
+    font-size: 12px;
 
     font-weight: 400;
 
@@ -551,7 +542,7 @@ img {
 
 
 
-/* Black button */
+/* Black button hoverda dönüşen */
 
 .button-primary {
 
@@ -563,7 +554,7 @@ img {
 
 
 
-/* White / outlined button */
+/* White / outlined button hoevrdaki normal*/
 
 .button-secondary {
 
@@ -573,7 +564,7 @@ img {
 
 
 
-/* SVG icon inside button */
+/* SVG icon buton içi */
 
 .button-icon {
 
@@ -595,9 +586,9 @@ img {
 
 
 
-/* ==========================================================
-   12 — SCROLL INDICATOR
-========================================================== */
+/* 
+    SCROLL INDICATOR
+ */
 
 .scroll-indicator {
 
@@ -635,12 +626,11 @@ img {
 
 
 
-/* ==========================================================
-   13 — TABLET / SMALL SCREEN
-
-   We will improve responsive behavior later.
-   For now this prevents the desktop design from breaking.
-========================================================== */
+/* 
+    TABLET / SMALL SCREEN
+  Duyarlı (responsive) davranışı daha sonra iyileştircem
+  Şimdilik bu, masaüstü tasarımının bozulmasını önlüyor
+*/
 
 @media (max-width: 900px) {
 
@@ -729,19 +719,9 @@ img {
 }
 
 
-
-/* ==========================================================
-   14 — MOBILE
-
-   This is only a basic first version.
-   We will design the real mobile layout later.
-========================================================== */
-
-
-
-/* ==========================================================
+/* 
    15 — SELECTED PROJECTS SECTION
-========================================================== */
+ */
 
 .projects-section {
 
@@ -756,7 +736,7 @@ img {
 
 /* Main content width
 
-   We reuse the same width logic used in the hero.
+  hero genişliği ile aynı mantığı kullanıyoruz
 */
 
 .section-container {
@@ -771,16 +751,16 @@ img {
 
 
 
-/* ==========================================================
-   16 — PROJECTS HEADER
+/* 
+   PROJECTS HEADER
 
-   Left:
+   Sol:
    [02] WORK
    Selected Projects
 
-   Right:
+   Sağ:
    Filter buttons
-========================================================== */
+ */
 
 .projects-header {
 
@@ -817,9 +797,9 @@ img {
 
 
 
-/* ==========================================================
+/* 
    17 — FILTER BUTTONS
-========================================================== */
+ */
 
 .project-filters {
 
@@ -875,9 +855,9 @@ img {
 
 
 
-/* ==========================================================
+/* 
    18 — PROJECT LIST
-========================================================== */
+ */
 
 .project-list {
 
@@ -893,14 +873,13 @@ img {
 
 
 
-/* ==========================================================
-   19 — PROJECT CARD
+/* 
+  PROJECT CARD
 
-   Each project uses the SAME HTML structure.
-
-   This is one of the most important reusable patterns
-   in this section.
-========================================================== */
+   Her proje AYNI HTML yapısını kullan
+   Bu, bu bölümdeki en önemli yeniden kullanılabilir
+   kalıplardan biridir.
+ */
 
 .project-card {
 
@@ -912,13 +891,13 @@ img {
 
 
 
-/* ==========================================================
-   20 — PROJECT META ROW
+/* 
+   PROJECT META ROW
 
-   Example:
-
+   Örnek:
    01 | UI/UX DESIGN                ● DELIVERED 2025
-========================================================== */
+
+ */
 
 .project-meta {
 
@@ -941,7 +920,7 @@ img {
 
 
 
-/* Left metadata */
+/* Sol metadata */
 
 .project-category {
 
@@ -969,7 +948,7 @@ img {
 
 
 
-/* Right metadata */
+/* Sağ metadata */
 
 .project-status {
 
@@ -983,9 +962,9 @@ img {
 
 
 
-/* ==========================================================
-   21 — PROJECT TITLE
-========================================================== */
+/* 
+   PROJECT TITLE
+ */
 
 .project-title-row {
 
@@ -998,7 +977,7 @@ img {
 
 
 
-/* Project title uses Libre Baskerville */
+/* Project title uses Libre Baskerville font */
 
 .project-title {
 
@@ -1014,15 +993,15 @@ img {
 
 
 
-/* ==========================================================
-   22 — PROJECT CONTENT
+/* 
+    PROJECT CONTENT
 
-   Left:
+   Sol:
    description + button
 
-   Right:
+   Sağ:
    tags
-========================================================== */
+= */
 
 .project-content {
     padding:
@@ -1044,9 +1023,9 @@ img {
 
 
 
-/* ==========================================================
-   23 — PROJECT DESCRIPTION
-========================================================== */
+/* 
+  PROJECT DESCRIPTION
+ */
 
 .project-description {
 
@@ -1061,20 +1040,20 @@ img {
 
     font-family: var(--font-sans);
 
-    font-size: 14px;
+    font-size: 16px;
 
     font-weight: 300;
 
     line-height: 1.55;
 
-    color: #6f6b66;
+    color: var(--color-text-gray);
 }
 
 
 
-/* ==========================================================
+/*
    24 — PROJECT LINK BUTTON
-========================================================== */
+ */
 
 .project-link {
     grid-column: 1;
@@ -1096,7 +1075,7 @@ img {
 
     font-family: var(--font-mono);
 
-    font-size: 9px;
+    font-size: 12px;
 
     letter-spacing: 0.08em;
 
@@ -1138,9 +1117,9 @@ img {
 
 
 
-/* ==========================================================
+/* 
    25 — PROJECT TAGS
-========================================================== */
+ */
 
 .project-tags {
     grid-column: 2;
@@ -1175,7 +1154,7 @@ img {
 
     font-family: var(--font-mono);
 
-    font-size: 10px;
+    font-size: 12px;
 
     letter-spacing: 0.05em;
 
@@ -1185,9 +1164,9 @@ img {
     background-color: #F0EFEA;
 }
 
-/* ==========================================================
-   26 — WORK HISTORY SECTION
-========================================================== */
+/* 
+   WORK HISTORY SECTION
+ */
 
 .experience-section {
     width: 100%;
@@ -1197,9 +1176,9 @@ img {
 }
 
 
-/* ==========================================================
-   27 — WORK HISTORY HEADER
-========================================================== */
+/* 
+   WORK HISTORY HEADER
+ */
 
 .experience-header {
     display: flex;
@@ -1218,9 +1197,9 @@ img {
 }
 
 
-/* ==========================================================
-   28 — EXPERIENCE LIST
-========================================================== */
+/* 
+   EXPERIENCE LIST
+ */
 
 .experience-list {
     width: 100%;
@@ -1231,9 +1210,9 @@ img {
 }
 
 
-/* ==========================================================
-   29 — EXPERIENCE ITEM
-========================================================== */
+/* 
+   EXPERIENCE ITEM
+ */
 
 .experience-item {
     width: 100%;
@@ -1242,9 +1221,9 @@ img {
 }
 
 
-/* ==========================================================
-   30 — EXPERIENCE TOP ROW
-========================================================== */
+/* 
+    EXPERIENCE TOP ROW
+ */
 
 .experience-meta {
     min-height: 54px;
@@ -1273,7 +1252,7 @@ img {
 .experience-company {
     font-family: var(--font-mono);
 
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 500;
 
     letter-spacing: 0.08em;
@@ -1293,7 +1272,7 @@ img {
 .experience-position {
     font-family: var(--font-mono);
 
-    font-size: 10px;
+    font-size: 12px;
 
     color: var(--color-muted);
 }
@@ -1307,7 +1286,7 @@ img {
 
     font-family: var(--font-mono);
 
-    font-size: 9px;
+    font-size: 12px;
 
     color: var(--color-muted);
 }
@@ -1328,9 +1307,9 @@ img {
 }
 
 
-/* ==========================================================
-   31 — EXPERIENCE CONTENT ROW
-========================================================== */
+/* 
+    EXPERIENCE CONTENT ROW
+ */
 
 .experience-content {
     min-height: 112px;
@@ -1356,18 +1335,18 @@ img {
 
     font-family: var(--font-sans);
 
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 300;
 
     line-height: 1.6;
 
-    color: #6f6b66;
+    color: var(--color-text-gray);
 }
 
 
-/* ==========================================================
-   32 — LOCATION + VISIT LINK
-========================================================== */
+/* 
+    LOCATION + VİSİT LINK
+ */
 
 .experience-side {
     display: flex;
@@ -1378,7 +1357,7 @@ img {
 
     font-family: var(--font-mono);
 
-    font-size: 9px;
+    font-size: 12px;
 
     color: var(--color-muted);
 
@@ -1419,9 +1398,9 @@ img {
     flex-shrink: 0;
 }
 
-/* ==========================================================
-   33 — BACKGROUND SECTION
-========================================================== */
+/* 
+    BACKGROUND SECTİON
+ */
 
 .background-section {
     width: 100%;
@@ -1437,16 +1416,16 @@ img {
 
 
 
-/* ==========================================================
-   34 — BACKGROUND MAIN GRID
+/* 
+   BACKGROUND ANA GRID
 
-   Desktop structure:
+   Desktop için:
 
-   LEFT COLUMN      RIGHT COLUMN
+   SOL taraf        SAĞ taraf
    About            Education
    Skills           Languages
                     Knowledge
-========================================================== */
+ */
 
 .background-grid {
     display: grid;
@@ -1461,9 +1440,9 @@ img {
 
 
 
-/* ==========================================================
-   35 — LEFT / RIGHT COLUMNS
-========================================================== */
+/* 
+   LEFT / RIGHT COLUMNS
+ */
 
 .background-left,
 .background-right {
@@ -1490,9 +1469,9 @@ img {
 
 
 
-/* ==========================================================
-   36 — ABOUT TEXT
-========================================================== */
+/* 
+   ABOUT TEXT
+ */
 
 .about-copy {
     max-width: 560px;
@@ -1521,17 +1500,17 @@ img {
 
 
 
-/* ==========================================================
-   37 — SHARED INFORMATION CARD
+/* 
+  SHARED INFORMATION CARD
 
-   Used by:
+   KULLANILDI:
    Skills
    Education
    Languages
    Knowledge
 
-   Reusing one card class avoids duplicated CSS.
-========================================================== */
+  Tek bir kart sınıfının yeniden kullanılması, CSS tekrarını önler.
+ */
 
 .info-card {
     width: 100%;
@@ -1573,9 +1552,9 @@ img {
 
 
 
-/* ==========================================================
-   38 — SKILLS
-========================================================== */
+/*
+   SKILLS
+ */
 
 .skills-list {
     padding:
@@ -1585,7 +1564,7 @@ img {
 
 
 /*
-   Each skill uses three columns:
+   HER SKİLL 3 COLUM  KULLANIYO:
 
    NAME | PROGRESS BAR | VALUE
 */
@@ -1631,7 +1610,7 @@ img {
 
 
 /*
-   The width comes from:
+   HTMLDEN GELEN HER WİDTH KULLANIYO:
 
    style="--skill-level: 92%;"
 
@@ -1653,9 +1632,9 @@ img {
 
 
 
-/* ==========================================================
-   39 — TOOLS AREA
-========================================================== */
+/* 
+    TOOLS AREA
+ */
 
 .tools-area {
     padding:
@@ -1683,15 +1662,15 @@ img {
 
 
 
-/* ==========================================================
-   40 — REUSABLE TAG SYSTEM
+/* 
+   REUSABLE TAG SYSTEM
 
-   Used for both:
+   KULLANILDI:
    Equipped Tools
    Knowledge
 
-   One component = less duplicated CSS.
-========================================================== */
+   One component EŞİTTİR less duplicated CSS. UNUTMA
+ */
 
 .tag-list {
     display: flex;
@@ -1717,16 +1696,16 @@ img {
 
     font-family: var(--font-mono);
 
-    font-size: 10px;
+    font-size: 12px;
 
     letter-spacing: 0.04em;
 }
 
 
 
-/* ==========================================================
-   41 — EDUCATION
-========================================================== */
+/* 
+   EDUCATION
+ */
 
 .education-item {
     padding:
@@ -1769,7 +1748,7 @@ img {
 
     font-family: var(--font-mono);
 
-    font-size: 10px;
+    font-size: 12px;
 }
 
 
@@ -1802,9 +1781,9 @@ img {
 
 
 
-/* ==========================================================
-   42 — LANGUAGES
-========================================================== */
+/* 
+   LANGUAGES
+ */
 
 .language-row {
     min-height: 50px;
@@ -1831,18 +1810,18 @@ img {
 
 
 
-/* ==========================================================
-   43 — KNOWLEDGE
-========================================================== */
+/* 
+   KNOWLEDGE
+ */
 
 .knowledge-content {
     padding:
         10px;
 }
 
-/* ==========================================================
-   44 — CONTACT SECTION
-========================================================== */
+/* 
+   CONTACT SECTION
+ */
 
 .contact-section {
     width: 100%;
@@ -1853,15 +1832,15 @@ img {
 
 
 
-/* ==========================================================
+/* 
    45 — CONTACT MAIN GRID
 
-   LEFT:
+   Sol:
    Big message + description
 
-   RIGHT:
+  Sağ:
    Contact information card
-========================================================== */
+ */
 
 .contact-grid {
     display: grid;
@@ -1876,9 +1855,9 @@ img {
 
 
 
-/* ==========================================================
-   46 — CONTACT INTRO
-========================================================== */
+/* 
+    CONTACT INTRO
+ */
 
 .contact-intro {
     max-width: 560px;
@@ -1947,9 +1926,9 @@ img {
 
 
 
-/* ==========================================================
-   47 — CONTACT CARD
-========================================================== */
+/* 
+    CONTACT CARD
+ */
 
 .contact-card {
     width: 100%;
@@ -1960,11 +1939,11 @@ img {
 
 
 
-/* ==========================================================
-   48 — CONTACT CARD HEADER
+/*
+   CONTACT CARD HEADER
 
    REACH OUT                      ● AVAILABLE
-========================================================== */
+ */
 
 .contact-card-header {
     min-height: 54px;
@@ -1987,7 +1966,7 @@ img {
 
     font-weight: 500;
 
-    font-size: 10px;
+    font-size: 12px;
 
     letter-spacing: 0.08em;
 
@@ -2006,9 +1985,9 @@ img {
 
 
 
-/* ==========================================================
+/* 
    49 — CONTACT INFORMATION ROWS
-========================================================== */
+ */
 
 .contact-row {
     min-height: 78px;
@@ -2026,7 +2005,7 @@ img {
 
 
 
-/* Line between contact rows */
+/* Çizgi between contact rows */
 
 .contact-row+.contact-row {
     border-top:
@@ -2040,7 +2019,7 @@ img {
 .contact-label {
     font-family: var(--font-mono);
 
-    font-size: 10px;
+    font-size: 12px;
 
     font-weight: 360;
 
@@ -2077,9 +2056,9 @@ img {
 
 
 
-/* ==========================================================
-   50 — LINKEDIN LINK + SVG
-========================================================== */
+/* 
+   LINKEDIN LINK + SVG
+ */
 
 .contact-link {
     display: inline-flex;
@@ -2108,9 +2087,9 @@ img {
     flex-shrink: 0;
 }
 
-/* ==========================================================
-   51 — FOOTER
-========================================================== */
+/* 
+   FOOTER
+ */
 
 .site-footer {
     width: 100%;
@@ -2130,7 +2109,7 @@ img {
 
     font-family: var(--font-mono);
 
-    font-size: 9px;
+    font-size: 12px;
 
     font-weight: 400;
 
@@ -2141,18 +2120,17 @@ img {
     color: var(--color-muted);
 }
 
-/* ==========================================================
+/*
    MOBILE — MAX WIDTH 600PX
 
-   Keep all mobile overrides inside this single block.
-   Desktop styles stay outside and remain unchanged.
-========================================================== */
+  mobile responsivility için burada çalış
+ */
 
 @media (max-width: 600px) {
 
-  /* ========================================================
+  /* 
      01 — GLOBAL MOBILE SETTINGS
-  ======================================================== */
+   */
 
 body {
   overflow-x: hidden;
@@ -2163,9 +2141,9 @@ body {
   }
 
 
-  /* ========================================================
-     02 — HEADER / NAVIGATION
-  ======================================================== */
+  /* 
+      HEADER / NAVIGATION
+  */
 
   .site-header {
     height: auto;
@@ -2186,9 +2164,9 @@ body {
 
 
 
-  /* ========================================================
-     03 — HERO
-  ======================================================== */
+  /* 
+     HERO
+   */
 
   .hero {
     padding-top: 50px;
@@ -2221,7 +2199,7 @@ body {
 
 
 
-  /* Hero main layout becomes vertical */
+  /* Hero main layout vertical oluyo */
 
   .hero-main {
     display: flex;
@@ -2274,7 +2252,7 @@ body {
 
 
 
-  /* Desktop vertical line becomes horizontal */
+  /* Desktop vertical line horizontal oldu */
 
   .hero-divider {
     width: 100%;
@@ -2322,9 +2300,9 @@ body {
 
 
 
-  /* ========================================================
+  /* 
      04 — SELECTED PROJECTS
-  ======================================================== */
+   */
 
   .projects-section {
     padding-top: 80px;
@@ -2391,9 +2369,7 @@ body {
 
 
 
-  /* IMPORTANT:
-     Desktop uses Grid.
-     Mobile changes project content to vertical Flex.
+  /* Desktopta griddi mobile da vertical flexbox oluyo
   */
 
   .project-content {
@@ -2420,7 +2396,7 @@ body {
 
 
 
-  /* 01 — Description */
+  /* Description */
 
   .project-description {
     width: 100%;
@@ -2435,14 +2411,14 @@ body {
 
     margin: 0;
 
-    font-size: 14px;
+    font-size: 16px;
 
     line-height: 1.55;
   }
 
 
 
-  /* 02 — Tags */
+  /*Tags */
 
   .project-tags {
     width: 100%;
@@ -2464,12 +2440,12 @@ body {
 
     padding: 0 9px;
 
-    font-size: 8px;
+    font-size: 12px;
   }
 
 
 
-  /* 03 — CTA */
+  /* CTA */
 
   .project-link {
     order: 3;
@@ -2485,9 +2461,9 @@ body {
 
 
 
-  /* ========================================================
-     05 — WORK HISTORY
-  ======================================================== */
+  /* 
+     WORK HISTORY
+  */
 
   .experience-section {
     padding-top: 80px;
@@ -2543,12 +2519,12 @@ body {
 
 
   .experience-company {
-    font-size: 10px;
+    font-size: 12px;
   }
 
 
   .experience-position {
-    font-size: 9px;
+    font-size: 12px;
   }
 
 
@@ -2583,7 +2559,7 @@ body {
     width: 100%;
     max-width: none;
 
-    font-size: 14px;
+    font-size: 16px;
 
     line-height: 1.55;
   }
@@ -2601,9 +2577,9 @@ body {
 
 
 
-  /* ========================================================
+  /* 
      06 — BACKGROUND
-  ======================================================== */
+   */
 
   .background-section {
     padding-top: 80px;
@@ -2617,7 +2593,7 @@ body {
 
 
 
-  /* Desktop two-column Grid becomes vertical */
+  /* Desktop two-column Grid vertical oluoy */
 
   .background-grid {
     display: flex;
@@ -2655,7 +2631,7 @@ body {
 
 
   .about-copy p {
-    font-size: 14px;
+    font-size: 16px;
 
     line-height: 1.6;
   }
@@ -2700,17 +2676,17 @@ body {
 
 
   .education-year {
-    font-size: 8px;
+    font-size: 12px;
   }
 
 
   .education-school {
-    font-size: 9px;
+    font-size: 12px;
   }
 
 
   .education-description {
-    font-size: 13px;
+    font-size: 12px;
   }
 
 
@@ -2744,9 +2720,9 @@ body {
 
 
 
-/* ========================================================
-   07 — CONTACT
-======================================================== */
+/* 
+    CONTACT
+ */
 
 .contact-section {
   width: 100%;
@@ -2757,7 +2733,7 @@ body {
 }
 
 
-/* Desktop Grid becomes vertical */
+/* Desktop Grid vertical oluyo */
 
 .contact-grid {
   display: flex;
@@ -2810,7 +2786,7 @@ body {
 
   margin-top: 32px;
 
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.6;
 }
 
@@ -2843,7 +2819,7 @@ body {
 }
 
 
-/* Each contact row becomes vertical */
+/* her contact row vertical oluyo */
 
 .contact-row {
   min-height: auto;
@@ -2864,7 +2840,7 @@ body {
 /* EMAIL / PHONE / LINKEDIN */
 
 .contact-label {
-  font-size: 8px;
+  font-size: 12px;
 }
 
 
@@ -2895,9 +2871,9 @@ body {
   gap: 8px;
 }
 
-/* ========================================================
-   08 — FOOTER
-======================================================== */
+/* 
+    FOOTER
+ */
 
 .site-footer {
   display: block;
@@ -2923,11 +2899,1472 @@ body {
 .footer-text {
   margin: 0;
 
-  font-size: 8px;
+  font-size: 12px;
 
   line-height: 1.5;
 
   white-space: normal;
 }
 
+/* Visual Work Mobile: desktop iki kolonlu yapıyı mobileda tek kolona çevirir */
+
+.visual-work-section {
+  padding-top: 80px;
+
+  padding-bottom: 80px;
+}
+
+
+/* Section Title Mobile: başlık mobile için biraz küçülür */
+
+.visual-work-title {
+  margin-bottom: 36px;
+
+  font-size: 34px;
+}
+
+
+/* Header Mobile: uzun içeriklerin taşmasını engeller */
+
+.visual-work-header {
+  min-height: auto;
+
+  padding:
+    14px;
+
+  flex-wrap: wrap;
+
+  align-items: flex-start;
+
+  gap: 12px;
+}
+
+
+/* Header Left Mobile: proje başlığı kendi alanında kalır */
+
+.visual-work-header-left {
+  min-width: 0;
+}
+
+
+/* Tool Label Mobile: gerekirse ikinci satıra geçebilir */
+
+.visual-work-tool {
+  white-space: normal;
+}
+
+
+/* Content Mobile: metin ve görseller alt alta yerleşir */
+
+.visual-work-content {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 30px;
+
+  padding:
+    22px
+    14px
+    26px;
+}
+
+
+/* Copy Mobile: metin artık tam genişliği kullanır */
+
+.visual-work-copy {
+  width: 100%;
+
+  max-width: none;
+}
+
+
+/* Paragraph Mobile: küçük ekrana uygun metin boyutu */
+
+.visual-work-copy p {
+  font-size: 16px;
+
+  line-height: 1.6;
+}
+
+
+/* Desktop Illustration: mobileda büyük desktop board gizlenir */
+
+.illustration-visual-desktop {
+  display: none;
+}
+
+
+/* Mobile Illustration: iki 3x4 SVG alt alta gösterilir */
+
+.illustration-visual-mobile {
+  display: flex;
+
+  flex-direction: column;
+
+  width: 100%;
+
+  gap: 14px;
+}
+
+
+/* Illustration Image Mobile: iki asset de tam genişlik kullanır */
+
+.illustration-grid-image {
+  width: 100%;
+}
+
+
+/* Character Visuals Mobile: iki karakter görseli de alt alta gelir */
+
+.character-visuals {
+  display: flex;
+
+  flex-direction: column;
+
+  width: 100%;
+
+  gap: 14px;
+}
+
+
+/* Character Image Mobile: tam genişlik */
+
+.character-image {
+  width: 100%;
+
+  height: auto;
+}
+
+}
+
+/* 
+   PROJECT DETAIL SAYFASI — HEADER
+
+   Layout:
+   BACK             [ IIT ]             VISIT SITE
+ */
+
+.project-header {
+  width: 100%;
+  height: 76px;
+
+  position: sticky;
+  top: 0;
+
+  z-index: 1000;
+
+  padding:
+    0
+    var(--page-padding);
+
+  display: grid;
+
+  grid-template-columns:
+    1fr
+    auto
+    1fr;
+
+  align-items: center;
+
+  background-color: var(--color-background);
+
+  border-bottom:
+    1px
+    solid
+    var(--color-border);
+}
+
+
+/* 
+   LEFT + RIGHT LINKS
+ */
+
+.project-header-link {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  width: fit-content;
+
+  font-family: var(--font-mono);
+
+  font-size: 12px;
+
+  font-weight: 400;
+
+  letter-spacing: 0.06em;
+
+  text-transform: uppercase;
+
+  color: var(--color-muted);
+
+  transition: opacity 0.2s ease;
+}
+
+
+.project-header-link:hover {
+  opacity: 0.55;
+}
+
+
+.project-back-link {
+  justify-self: start;
+}
+
+
+/* Visit Site stays on the right */
+
+.project-visit-link {
+  justify-self: end;
+}
+
+
+/*
+   Logo ortalama
+ */
+
+.project-header-logo {
+  justify-self: center;
+
+  font-family: var(--font-mono);
+
+  font-size: 12px;
+
+  font-weight: 400;
+
+  letter-spacing: 0.08em;
+
+  white-space: nowrap;
+}
+
+
+.project-back-icon {
+  width: 13px;
+  height: 13px;
+
+  display: block;
+
+  flex-shrink: 0;
+}
+
+
+.project-header-icon {
+  width: 12px;
+  height: 12px;
+
+  fill: none;
+
+  stroke: currentColor;
+
+  stroke-width: 1.08333;
+
+  stroke-linecap: round;
+
+  stroke-linejoin: round;
+
+  flex-shrink: 0;
+}
+
+/* 
+   PROJECT DETAIL PAGE — SHARED CONTAINER
+
+ */
+
+.project-detail-container {
+  width: 100%;
+
+  max-width: var(--content-width);
+
+  margin: 0 auto;
+}
+
+
+
+/* 
+   PROJECT OVERVIEW SECTION
+ */
+
+.project-overview {
+  width: 100%;
+
+  padding:
+    120px
+    var(--page-padding)
+    100px;
+}
+
+
+
+/* 
+   PROJECT INTRO
+
+   Desktop:
+   TITLE               DESCRIPTION
+ */
+
+.project-intro {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 0.9fr)
+    minmax(0, 1.1fr);
+
+  column-gap: 90px;
+
+  align-items: center;
+
+  margin-bottom: 80px;
+}
+
+
+
+/* Main project title */
+
+.project-detail-title {
+  margin: 0;
+
+  font-family: var(--font-serif);
+
+  font-size: clamp(58px, 6vw, 72px);
+
+  font-weight: 400;
+
+  line-height: 1;
+}
+
+
+
+/* Intro paragraph */
+
+.project-detail-description {
+  max-width: 620px;
+
+  margin: 0;
+
+  font-family: var(--font-sans);
+
+  font-size: 20px;
+
+  font-weight: 400;
+
+  line-height: 1.65;
+
+  color: var(--color-text-gray);
+}
+
+/* 
+   PROJECT INFORMATION CARD
+ */
+
+.project-info-card {
+  width: 100%;
+
+  border:
+    1px
+    solid
+    var(--color-border);
+}
+
+/* 
+   PROJECT INFORMATION GRID
+
+   ROLE | PERIOD | TYPE | STATUS
+= */
+
+.project-info-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+}
+
+
+
+/* Individual information cell */
+
+.project-info-item {
+  min-height: 88px;
+
+  padding:
+    22px
+    20px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  gap: 10px;
+}
+
+
+
+/* Vertical dividers */
+
+.project-info-item + .project-info-item {
+  border-left:
+    1px
+    solid
+    var(--color-border);
+}
+
+
+
+/* Small heading */
+
+.project-info-label {
+  font-family: var(--font-mono);
+
+  font-size: 12px;
+
+  font-weight: 500;
+
+  letter-spacing: 0.07em;
+
+  text-transform: uppercase;
+
+  color: var(--color-text-gray);
+}
+
+
+
+/* Main metadata değeri */
+
+.project-info-value {
+  font-family: var(--font-sans);
+
+  font-size: 16px;
+
+  font-weight: 500;
+
+  line-height: 1.4;
+}
+
+
+
+/* 
+   PROJECT TAG ROW
+ */
+.project-detail-tags {
+
+  padding:
+    16px
+    20px;
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 7px;
+
+  border-top:
+    1px
+    solid
+    var(--color-border);
+}
+
+
+
+/* Individual tag */
+
+.project-detail-tag {
+  min-height: 28px;
+
+  padding:
+    0
+    10px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  border:
+    1px
+    solid
+    var(--color-border);
+
+  font-family: var(--font-mono);
+
+  font-size: 12px;
+
+  letter-spacing: 0.04em;
+}
+
+/* 
+   DESIGN WORK SECTION
+ */
+
+.design-work-section {
+  width: 100%;
+
+  padding:
+    120px
+    var(--page-padding)
+    100px;
+}
+
+
+/* Section title */
+
+.design-work-title {
+  margin:
+    0
+    0
+    48px;
+
+  font-family: var(--font-serif);
+
+  font-size: 40px;
+
+  font-weight: 400;
+
+  line-height: 1.2;
+}
+
+
+
+/* 
+   DESIGN WORK CARD
+ */
+
+.design-work-card {
+  width: 100%;
+
+  border:
+    1px
+    solid
+    var(--color-border);
+}
+
+
+
+/* 
+   CARD HEADER düzeni unutma
+
+   01 | PROJECT TITLE — DIARY FOR APP
+ */
+
+.design-work-header {
+  min-height: 54px;
+
+  padding:
+    0
+    20px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  background-color: var(--color-card-header);
+
+  border-bottom:
+    1px
+    solid
+    var(--color-border);
+}
+
+
+.design-work-number {
+  font-family: var(--font-mono);
+
+  font-size: 12px;
+
+  color: var(--color-muted);
+}
+
+
+.design-work-divider {
+  width: 1px;
+
+  height: 20px;
+
+  background-color: var(--color-border);
+}
+
+
+.design-work-name {
+  font-family: var(--font-mono);
+
+  font-size: 12px;
+
+  font-weight: 500;
+
+  letter-spacing: 0.04em;
+
+  text-transform: uppercase;
+}
+
+
+
+/* 
+   CARD CONTENT
+
+  sol = text
+  sağ = screens
+ */
+
+.design-work-content {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(460px, 1fr);
+
+  column-gap: 60px;
+
+  padding:
+    52px
+    20px
+    28px;
+
+  align-items: start;
+}
+
+
+
+/* 
+   Sol tarafa 
+ */
+
+.design-work-copy {
+  max-width: 650px;
+}
+
+
+.design-work-copy p {
+  margin:
+    0
+    0
+    28px;
+
+  font-family: var(--font-sans);
+
+  font-size: 15px;
+
+  font-weight: 300;
+
+  line-height: 1.65;
+
+  color: var(--color-muted);
+}
+
+
+.design-work-copy p:last-of-type {
+  margin-bottom: 30px;
+}
+
+
+
+/* 
+   TAGS
+ */
+
+.design-work-tags {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 7px;
+
+  margin-bottom: 28px;
+}
+
+
+.design-work-tag {
+  min-height: 28px;
+
+  padding:
+    0
+    10px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  border:
+    1px
+    solid
+    var(--color-border);
+
+  font-family: var(--font-mono);
+
+  font-size: 12px;
+
+  letter-spacing: 0.04em;
+}
+
+
+
+/* 
+   ViEW PROTOTYPE BUTTON
+ */
+
+.design-work-link {
+  min-height: 40px;
+
+  padding:
+    0
+    16px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  border:
+    1px
+    solid
+    var(--color-border);
+
+  font-family: var(--font-mono);
+
+  font-size: 12px;
+
+  letter-spacing: 0.08em;
+
+  text-transform: uppercase;
+
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+
+.design-work-link:hover {
+  background-color: var(--color-text);
+
+  color: var(--color-white);
+}
+
+
+.design-work-link-icon {
+  width: 11px;
+
+  height: 11px;
+
+  fill: none;
+
+  stroke: currentColor;
+
+  stroke-width: 1.08333;
+
+  stroke-linecap: round;
+
+  stroke-linejoin: round;
+
+  flex-shrink: 0;
+}
+
+
+
+/* 
+   RIGHT SiDE — VISUALS
+ */
+
+.design-work-visuals {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 22px;
+
+  align-items: end;
+}
+
+
+.design-work-screen {
+  width: 100%;
+
+  height: auto;
+
+  display: block;
+}
+
+/* Visual Work Section: illustration ve character design çalışmalarının ana alanı */
+
+.visual-work-section {
+  width: 100%;
+
+  padding:
+    120px
+    var(--page-padding)
+    100px;
+}
+
+
+/* Section Title: Visual Work başlığının görünümü */
+
+.visual-work-title {
+  margin:
+    0
+    0
+    48px;
+
+  font-family: var(--font-serif);
+
+  font-size: 40px;
+
+  font-weight: 400;
+
+  line-height: 1.2;
+}
+
+
+/* Visual Work Card: her visual work projesinin ortak kart yapısı */
+
+.visual-work-card {
+  width: 100%;
+
+  border:
+    1px
+    solid
+    var(--color-border);
+}
+
+
+/* Card Spacing: iki kart arasındaki boşluğu oluşturur */
+
+.visual-work-card + .visual-work-card {
+  margin-top: 28px;
+}
+
+
+/* Header: kartın üst bilgi satırı */
+
+.visual-work-header {
+  min-height: 54px;
+
+  padding:
+    0
+    18px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 20px;
+
+  background-color: var(--color-card-header);
+
+  border-bottom:
+    1px
+    solid
+    var(--color-border);
+}
+
+
+/* Header Left: numara, divider ve başlığı aynı satırda tutar */
+
+.visual-work-header-left {
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+}
+
+
+/* Number: 01 ve 02 gibi proje numaraları */
+
+.visual-work-number {
+  font-family: var(--font-mono);
+
+  font-size: 12px;
+
+  color: var(--color-muted);
+}
+
+
+/* Divider: numara ile proje başlığı arasındaki küçük dikey çizgi */
+
+.visual-work-divider {
+  width: 1px;
+
+  height: 20px;
+
+  background-color: var(--color-border);
+}
+
+
+/* Name: proje başlığı */
+
+.visual-work-name {
+  font-family: var(--font-mono);
+
+  font-size: 12px;
+
+  font-weight: 500;
+
+  letter-spacing: 0.04em;
+
+  text-transform: uppercase;
+}
+
+
+/* Tool Label: headerın sağ tarafındaki kullanılan program bilgisi */
+
+.visual-work-tool {
+  padding:
+    5px
+    9px;
+
+  border:
+    1px
+    solid
+    var(--color-border);
+
+  font-family: var(--font-mono);
+
+  font-size: 12px;
+
+  color: var(--color-muted);
+
+  white-space: nowrap;
+}
+
+
+/* Content: solda metin, sağda görseller olacak şekilde iki kolon oluşturur */
+
+.visual-work-content {
+  display: grid;
+
+  grid-template-columns:
+    minmax(280px, 0.58fr)
+    minmax(0, 1.42fr);
+
+  column-gap: 54px;
+
+  padding:
+    26px
+    18px
+    28px;
+
+  align-items: start;
+}
+
+
+/* Copy: sol taraftaki açıklama alanı */
+
+.visual-work-copy {
+  max-width: 430px;
+}
+
+
+/* Paragraph: açıklama metinleri */
+
+.visual-work-copy p {
+  margin:
+    0
+    0
+    24px;
+
+  font-family: var(--font-sans);
+
+  font-size: 16px;
+
+  font-weight: 300;
+
+  line-height: 1.6;
+
+  color: var(--color-muted);
+}
+
+
+.visual-work-copy p:last-of-type {
+  margin-bottom: 24px;
+}
+
+
+/* Tags: etiketleri yan yana ve gerektiğinde alt satıra geçirir */
+
+.visual-work-tags {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 6px;
+}
+
+
+/* Tag: ortak visual work etiketi */
+
+.visual-work-tag {
+  min-height: 27px;
+
+  padding:
+    0
+    9px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  border:
+    1px
+    solid
+    var(--color-border);
+
+  font-family: var(--font-mono);
+
+  font-size: 12px;
+
+  letter-spacing: 0.04em;
+}
+
+
+/* Illustration Visual: illustration board assetinin containerı */
+
+.illustration-visual {
+  width: 100%;
+}
+
+
+/* Desktop Visual: desktopta tek büyük grid görünür */
+
+.illustration-visual-desktop {
+  display: block;
+}
+
+
+/* Mobile Visual: desktopta mobile exportlar gizlenir */
+
+.illustration-visual-mobile {
+  display: none;
+}
+
+
+/* Illustration Image: SVG'nin container genişliğine uyum sağlamasını sağlar */
+
+.illustration-grid-image {
+  display: block;
+
+  width: 100%;
+
+  height: auto;
+}
+
+
+/* Character Visuals: iki karakter görselini yan yana yerleştirir */
+
+.character-visuals {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 14px;
+
+  align-items: stretch;
+}
+
+
+/* Character Image: SVG oranını bozmadan container içine yerleşir */
+
+.character-image {
+  display: block;
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: contain;
+}
+
+/* Character Animation Section: motion design bölümünün ana alanı */
+
+.character-animation-section {
+  width: 100%;
+
+  padding:
+    120px
+    var(--page-padding)
+    100px;
+}
+
+
+/* Section Title: Character Animation başlığının görünümü */
+
+.character-animation-title {
+  margin:
+    0
+    0
+    48px;
+
+  font-family: var(--font-serif);
+
+  font-size: 40px;
+
+  font-weight: 400;
+
+  line-height: 1.2;
+}
+
+
+/* Animation Card: section içindeki ana kart yapısı */
+
+.character-animation-card {
+  width: 100%;
+
+  border:
+    1px
+    solid
+    var(--color-border);
+}
+
+
+/* Header: kartın üst bilgi alanı */
+
+.character-animation-header {
+  min-height: 54px;
+
+  padding:
+    0
+    18px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 20px;
+
+  background-color: var(--color-card-header);
+
+  border-bottom:
+    1px
+    solid
+    var(--color-border);
+}
+
+
+/* Header Left: numara, divider ve başlığı bir arada tutar */
+
+.character-animation-header-left {
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+}
+
+
+/* Number: 01 bilgisi */
+
+.character-animation-number {
+  font-family: var(--font-mono);
+
+  font-size: 12px;
+
+  color: var(--color-muted);
+}
+
+
+/* Divider: numara ile başlık arasındaki dikey çizgi */
+
+.character-animation-divider {
+  width: 1px;
+
+  height: 20px;
+
+  background-color: var(--color-border);
+}
+
+
+/* Name: kart başlığı */
+
+.character-animation-name {
+  font-family: var(--font-mono);
+
+  font-size: 12px;
+
+  font-weight: 500;
+
+  letter-spacing: 0.04em;
+
+  text-transform: uppercase;
+}
+
+
+/* Tools: sağ taraftaki tool etiketlerini yan yana tutar */
+
+.character-animation-tools {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  justify-content: flex-end;
+
+  gap: 7px;
+}
+
+
+/* Tool: tek tek program label görünümü */
+
+.character-animation-tool {
+  padding:
+    5px
+    9px;
+
+  border:
+    1px
+    solid
+    var(--color-border);
+
+  font-family: var(--font-mono);
+
+  font-size: 12px;
+
+  color: var(--color-muted);
+
+  white-space: nowrap;
+}
+
+
+/* Content: solda açıklama, sağda GIF olacak şekilde iki kolon oluşturur */
+
+.character-animation-content {
+  display: grid;
+
+  grid-template-columns:
+    minmax(280px, 0.58fr)
+    minmax(0, 1.42fr);
+
+  column-gap: 54px;
+
+  padding:
+    34px
+    18px
+    36px;
+
+  align-items: top;
+}
+
+
+/* Copy: sol metin alanı */
+
+.character-animation-copy {
+  max-width: 430px;
+}
+
+
+/* Paragraph: animation açıklaması */
+
+.character-animation-copy p {
+  margin:
+    0
+    0
+    26px;
+
+  font-family: var(--font-sans);
+
+  font-size: 16px;
+
+  font-weight: 300;
+
+  line-height: 1.65;
+
+  color: var(--color-muted);
+}
+
+
+/* Tags: animation taglerini alt alta taşmadan sıralar */
+
+.character-animation-tags {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 6px;
+}
+
+
+/* Tag: tek tag görünümü */
+
+.character-animation-tag {
+  min-height: 27px;
+
+  padding:
+    0
+    9px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  border:
+    1px
+    solid
+    var(--color-border);
+
+  font-family: var(--font-mono);
+
+  font-size: 12px;
+
+  letter-spacing: 0.04em;
+}
+
+
+/* Animation Visual: GIF containerı */
+
+.character-animation-visual {
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+
+/* Animation GIF: responsive kalır ve oranı bozulmaz */
+
+.character-animation-gif {
+  display: block;
+
+  width: 100%;
+
+  max-width: 560px;
+
+  height: auto;
+}
+
+/* Project Footer: project detail sayfalarının alt navigasyon alanı */
+
+.project-footer {
+  width: 100%;
+
+  min-height: 96px;
+
+  padding:
+    0
+    var(--page-padding);
+
+  display: grid;
+
+  grid-template-columns:
+    1fr
+    auto
+    1fr;
+
+  align-items: center;
+
+  border-top:
+    1px
+    solid
+    var(--color-border);
+}
+
+
+/* Footer Link: Back ve Next Project linklerinin ortak görünümü */
+
+.project-footer-link {
+  width: fit-content;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  font-family: var(--font-mono);
+
+  font-size: 12px;
+
+  font-weight: 500;
+
+  letter-spacing: 0.06em;
+
+  text-transform: uppercase;
+
+  color: var(--color-muted);
+
+  transition: opacity 0.2s ease;
+}
+
+
+.project-footer-link:hover {
+  opacity: 0.55;
+}
+
+
+/* Back Link: sol tarafa hizalanır */
+
+.project-footer-back {
+  justify-self: start;
+}
+
+
+/* Next Project Link: sağ tarafa hizalanır */
+
+.project-footer-next {
+  justify-self: end;
+}
+
+
+/* Copyright: footerın gerçek merkezinde kalır */
+
+.project-footer-copyright {
+  margin: 0;
+
+  justify-self: center;
+
+  font-family: var(--font-mono);
+
+  font-size: 12px;
+
+  font-weight: 400;
+
+  letter-spacing: 0.06em;
+
+  text-transform: uppercase;
+
+  color: var(--color-muted);
+
+  white-space: nowrap;
+}
+
+
+/* Back Icon: export ettiğin arrow-back SVG */
+
+.project-footer-back-icon {
+  display: block;
+
+  width: 13px;
+  height: 13px;
+
+  object-fit: contain;
+
+  flex-shrink: 0;
+}
+
+
+/* Next Project Icon: text rengiyle birlikte değişen inline SVG */
+
+.project-footer-next-icon {
+  width: 12px;
+  height: 12px;
+
+  fill: none;
+
+  stroke: currentColor;
+
+  stroke-width: 1.08333;
+
+  stroke-linecap: round;
+
+  stroke-linejoin: round;
+
+  flex-shrink: 0;
 }

@@ -14,12 +14,12 @@
   <title>Iklima Ikbal Türköz — Product Designer</title>
 
 
-  <!-- =========================================
+  <!-- 
        GOOGLE FONTS
        DM Mono = labels, navigation, buttons
        Outfit = body text
        Libre Baskerville = large serif titles
-  ========================================== -->
+ -->
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
 
@@ -49,9 +49,10 @@
 <body>
 
 
-  <!-- =========================================
-       HEADER / NAVIGATION
-  ========================================== -->
+  <!--
+       YER: HEADER / NAVIGATION
+       
+   -->
 
   <header class="site-header">
 
@@ -99,16 +100,16 @@
 
 
 
-  <!-- =========================================
-       MAIN PAGE CONTENT
-  ========================================== -->
+  <!--
+       YER: MAIN PAGE CONTENT
+ -->
 
   <main>
 
 
-    <!-- =========================================
-         HERO SECTION
-    ========================================== -->
+    <!-- 
+         YER: HERO SECTION
+     -->
 
     <section
       class="hero"
@@ -116,10 +117,10 @@
     >
 
 
-      <!-- =========================
+      <!-- 
            PROFILE AREA
            Photo + status information
-      ========================== -->
+    -->
 
       <div class="hero-profile">
 
@@ -131,8 +132,8 @@
 
 
         <!--
-          All three status labels are inside ONE box.
-          The vertical lines are created with CSS.
+          NOT:Her üç durum etiketi de TEK bir kutunun içinde.
+          Dikey çizgiler CSS ile oluşturuldu. 
         -->
 
         <div class="availability-box text-mono-meta">
@@ -164,16 +165,15 @@
       </div>
 
 
-
-      <!-- =========================
-           HERO MAIN CONTENT
-           Name | divider | description
-      ========================== -->
+      <!-- 
+           YER: HERO MAIN CONTENT
+           DÜZEN: Name | divider | description
+      -->
 
       <div class="hero-main">
 
 
-        <!-- LEFT SIDE: NAME -->
+        <!-- NOT: LEFT SIDE: NAME -->
 
         <div class="hero-name">
 
@@ -193,7 +193,7 @@
 
 
 
-        <!-- CENTER VERTICAL LINE -->
+        <!-- NOT: CENTER VERTICAL LINE -->
 
         <div
           class="hero-divider"
@@ -202,7 +202,7 @@
 
 
 
-        <!-- RIGHT SIDE: INTRODUCTION -->
+        <!-- NOT: RIGHT SIDE: INTRODUCTION -->
 
         <div class="hero-description">
 
@@ -228,14 +228,14 @@
 
 
 
-      <!-- =========================
-           HERO BUTTONS
-      ========================== -->
+      <!--
+           YER: HERO BUTTONS
+       -->
 
       <div class="hero-actions">
 
 
-        <!-- Primary button -->
+        <!-- NOT: Primary button -->
 
         <a
           href="#projects"
@@ -269,9 +269,9 @@
 
 
 
-      <!-- =========================
-           SCROLL INDICATOR
-      ========================== -->
+      <!-- 
+           NOT: SCROLL INDICATOR svg eklendi
+      -->
 
       <a
         href="#projects"
@@ -292,9 +292,7 @@
     </section>
 
 
-<!-- =========================================
-     SELECTED PROJECTS SECTION
-========================================== -->
+<!--BNOT: SELECTED PROJECTS SECTION burada -->
 
 <section
   class="projects-section"
@@ -304,10 +302,10 @@
   <div class="section-container">
 
 
-    <!-- =====================================
-         SECTION HEADER
-         Title + filters
-    ====================================== -->
+    <!-- DÜZEN:
+         SECTION HEADER bölümü
+         Title + filters eklenicek
+    -->
 
     <div class="projects-header">
     
@@ -321,8 +319,8 @@
     
     
         <!--
-        These buttons are visual only for now.
-        Later we can add JavaScript filtering.
+        buttonlar sadece visual için
+        JaVADAN SCRİPT EKLENİCEK filter için.
       -->
 
       <div class="project-filters">
@@ -354,21 +352,21 @@
 
 
 
-    <!-- =====================================
-         PROJECT LIST
-    ====================================== -->
+    <!-- 
+         PROJECT LIST sectionı
+    -->
 
     <div class="project-list">
 
 
-      <!-- =================================
+      <!-- 
            PROJECT 01 — BREATHMENT
-      ================================== -->
+       -->
 
       <article class="project-card">
 
 
-        <!-- Top metadata row -->
+        <!-- Top metadata row içeriğie bak-->
 
         <div class="project-meta">
 
@@ -416,8 +414,7 @@
           2. Tags
           3. CTA
 
-          Desktop and mobile layouts can now
-          control these three elements independently.
+         Mobil ve masaüstü bu strüktürü kullanıcak.
         -->
 
         <div class="project-content">
@@ -466,7 +463,7 @@
           <!-- Project CTA -->
 
           <a
-            href="#"
+            href="breathment.html"
             class="project-link"
           >
 
@@ -496,9 +493,9 @@
 
 
 
-      <!-- =================================
+      <!-- 
            PROJECT 02 — SERICA
-      ================================== -->
+       -->
 
       <article class="project-card">
 
@@ -621,9 +618,9 @@
 
 
 
-      <!-- =================================
+      <!-- 
            PROJECT 03 — CITY DIALOGUE
-      ================================== -->
+     -->
 
       <article class="project-card">
 
@@ -749,9 +746,9 @@
 </section>
 
 
-<!-- =========================================
-     WORK HISTORY SECTION
-========================================== -->
+<!-- 
+     yer: WORK HISTORY SECTION
+ -->
 
 <section
   class="experience-section"
@@ -761,9 +758,9 @@
   <div class="section-container">
 
 
-    <!-- ===============================
+    <!-- 
          SECTION HEADER
-    ================================ -->
+   -->
 
     <div class="experience-header">
 
@@ -773,8 +770,7 @@
 
 
       <!--
-        Visual filters only for now.
-        Filtering logic can be added later with JavaScript.
+        filterler javayla eklenicek
       -->
 
       <div class="experience-filters">
@@ -806,16 +802,16 @@
 
 
 
-    <!-- ===============================
+    <!-- 
          EXPERIENCE LIST
-    ================================ -->
+     -->
 
     <div class="experience-list">
 
 
-      <!-- =============================
+      <!-- 
            EXPERIENCE 01 — BREATHMENT
-      ============================== -->
+       -->
 
       <article class="experience-item">
 
@@ -878,7 +874,7 @@
             </span>
 
             <a
-              href="#"
+              href="https://breathment.com/en/"
               class="experience-link"
             >
 
@@ -906,9 +902,9 @@
 
 
 
-      <!-- =============================
+      <!-- 
            EXPERIENCE 02 — YÜKSEL PROJE
-      ============================== -->
+       -->
 
       <article class="experience-item">
 
@@ -961,7 +957,7 @@
             </span>
 
             <a
-              href="#"
+              href="https://www.yukselproje.com.tr/en"
               class="experience-link"
             >
 
@@ -990,9 +986,9 @@
 
 
 
-      <!-- =============================
+      <!-- 
            EXPERIENCE 03 — ARKITERA
-      ============================== -->
+      -->
 
       <article class="experience-item">
 
@@ -1045,7 +1041,7 @@
             </span>
 
             <a
-              href="#"
+              href="https://www.arkitera.com/author/ikbalturkoz/"
               class="experience-link"
             >
 
@@ -1074,9 +1070,9 @@
 
 
 
-      <!-- =============================
+      <!-- 
            EXPERIENCE 04 — RENAISSANCE
-      ============================== -->
+       -->
 
       <article class="experience-item">
 
@@ -1130,7 +1126,7 @@
             </span>
 
             <a
-              href="#"
+              href="https://ronesans.com/en"
               class="experience-link"
             >
 
@@ -1157,9 +1153,9 @@
 </section>
 
 
-<!-- =========================================
+<!-- 
      BACKGROUND SECTION
-========================================== -->
+ -->
 
 <section
   class="background-section"
@@ -1169,9 +1165,9 @@
   <div class="section-container">
 
 
-    <!-- ===============================
+    <!-- 
          SECTION TITLE
-    ================================ -->
+     -->
 
     <h2 class="section-title background-title">
       Background
@@ -1179,29 +1175,29 @@
 
 
 
-    <!-- ===============================
-         TWO-COLUMN BACKGROUND LAYOUT
+    <!-- 
+         iki sütünlu Layout
 
-         LEFT:
+         Sol:
          About text + skills
 
-         RIGHT:
+         Sağ:
          Education + languages + knowledge
-    ================================ -->
+    -->
 
     <div class="background-grid">
 
 
-      <!-- =====================================
-           LEFT COLUMN
-      ====================================== -->
+      <!-- 
+           Sol sütün
+       -->
 
       <div class="background-left">
 
 
-        <!-- ===============================
+        <!-- 
              ABOUT TEXT
-        ================================ -->
+         -->
 
         <div class="about-copy">
 
@@ -1234,9 +1230,9 @@
 
 
 
-        <!-- ===============================
-             SKILLS CARD
-        ================================ -->
+        <!-- 
+             SKills kartı
+         -->
 
         <div class="info-card skills-card">
 
@@ -1431,9 +1427,9 @@
 
 
 
-          <!-- ===============================
+          <!-- 
                TOOLS
-          ================================ -->
+          -->
 
           <div class="tools-area">
 
@@ -1462,16 +1458,16 @@
 
 
 
-      <!-- =====================================
-           RIGHT COLUMN
-      ====================================== -->
+      <!-- 
+           Sa Sütun
+       -->
 
       <div class="background-right">
 
 
-        <!-- =================================
+        <!-- 
              EDUCATION
-        ================================== -->
+        -->
 
         <div class="info-card">
 
@@ -1547,9 +1543,9 @@
 
 
 
-        <!-- =================================
+        <!-- 
              LANGUAGES
-        ================================== -->
+         -->
 
         <div class="info-card">
 
@@ -1604,9 +1600,9 @@
 
 
 
-        <!-- =================================
+        <!-- 
              KNOWLEDGE
-        ================================== -->
+         -->
 
         <div class="info-card">
 
@@ -1645,9 +1641,9 @@
 
 </section>
 
-<!-- =========================================
+<!-- 
      CONTACT SECTION
-========================================== -->
+ -->
 
 <section
   class="contact-section"
@@ -1657,17 +1653,17 @@
   <div class="section-container">
 
 
-    <!-- =====================================
-         TWO-COLUMN CONTACT LAYOUT
-    ====================================== -->
+    <!-- 
+         Çift Sütun CONTACT LAYOUT
+    -->
 
     <div class="contact-grid">
 
 
-      <!-- =================================
-           LEFT SIDE
+      <!-- 
+           Sol taraf
            Main contact message
-      ================================== -->
+       -->
 
       <div class="contact-intro">
 
@@ -1697,16 +1693,16 @@
 
 
       <!-- =================================
-           RIGHT SIDE
+           Sağ taraf
            Contact information card
       ================================== -->
 
       <div class="contact-card">
 
 
-        <!-- ===============================
+        <!-- 
              CARD HEADER
-        ================================ -->
+         -->
 
         <div class="contact-card-header">
 
@@ -1729,9 +1725,9 @@
 
 
 
-        <!-- ===============================
+        <!-- 
              EMAIL ROW
-        ================================ -->
+        -->
 
         <div class="contact-row">
 
@@ -1751,9 +1747,10 @@
 
 
 
-        <!-- ===============================
+        <!-- 
              PHONE ROW
-        ================================ -->
+         -->
+
 
         <div class="contact-row">
 
@@ -1773,9 +1770,10 @@
 
 
 
-        <!-- ===============================
+        <!-- 
              LINKEDIN ROW
-        ================================ -->
+         -->
+
 <div class="contact-row">
 
     <span class="contact-label">
@@ -1809,9 +1807,9 @@
 
 </main>
 
-<!-- =========================================
+<!-- 
      FOOTER
-========================================== -->
+ -->
 
 <footer class="site-footer">
 
