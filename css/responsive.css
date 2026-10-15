@@ -83,7 +83,39 @@
         max-width: 650px;
     }
 
+
+
+  /* Serica Tablet: geniş desktop kolonlarını biraz daraltır */
+
+  .serica-page .project-intro {
+    column-gap: 50px;
+  }
+
+
+  .serica-work-content,
+  .serica-touchpoint-content {
+    column-gap: 36px;
+  }
+
+
+  .serica-touchpoint-content {
+    grid-template-columns:
+      minmax(280px, 0.9fr)
+      minmax(360px, 1.1fr);
+  }
+
+
+  .serica-brand-middle {
+    column-gap: 18px;
+  }
+
+
+  .serica-poster-grid {
+    gap: 18px;
+  }
+
 }
+
 
 
 /*
@@ -1463,10 +1495,8 @@ body {
   gap: 7px;
 }
 
-}
 
-@media (max-width: 600px) {
-  .breathment-page .project-footer {
+.breathment-page .project-footer {
     width: 100%;
     min-height: auto;
     padding: 20px var(--page-padding);
@@ -1513,4 +1543,781 @@ body {
     width: 9px;
     height: 9px;
   }
+
+/* Serica Mobile: project overview mobileda vertical düzene geçer */
+
+.serica-page .project-overview {
+  padding:
+    72px
+    var(--page-padding)
+    70px;
 }
+
+
+.serica-page .project-intro {
+  display: flex;
+
+  flex-direction: column;
+
+  width: 100%;
+
+  gap: 30px;
+
+  margin-bottom: 48px;
+}
+
+
+.serica-page .project-detail-title {
+  width: 100%;
+
+  font-size: 48px;
+
+  line-height: 1;
+}
+
+
+.serica-page .project-detail-description {
+  width: 100%;
+
+  max-width: none;
+
+  font-size: 15px;
+
+  line-height: 1.6;
+}
+
+
+
+/* Serica Project Info Mobile: 2x2 layout */
+
+.serica-page .project-info-grid {
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+}
+
+
+.serica-page .project-info-item {
+  min-height: 94px;
+
+  padding:
+    18px
+    14px;
+}
+
+
+.serica-page .project-info-item + .project-info-item {
+  border-left: none;
+}
+
+
+.serica-page .project-info-item:nth-child(even) {
+  border-left:
+    1px
+    solid
+    var(--color-border);
+}
+
+
+.serica-page .project-info-item:nth-child(n + 3) {
+  border-top:
+    1px
+    solid
+    var(--color-border);
+}
+
+
+
+/* Serica Tags Mobile */
+
+.serica-page .project-detail-tags {
+  padding:
+    16px
+    14px;
+
+  gap: 6px;
+}
+
+
+
+/* Serica Footer Mobile */
+
+.serica-page .project-footer {
+  width: 100%;
+
+  min-height: auto;
+
+  padding:
+    20px
+    var(--page-padding);
+
+  display: grid;
+
+  grid-template-columns:
+    1fr
+    1fr;
+
+  grid-template-rows:
+    auto
+    auto;
+
+  column-gap: 16px;
+  row-gap: 18px;
+
+  align-items: center;
+}
+
+
+.serica-page .project-footer-back {
+  grid-column: 1;
+  grid-row: 1;
+
+  justify-self: start;
+}
+
+
+.serica-page .project-footer-next {
+  grid-column: 2;
+  grid-row: 1;
+
+  justify-self: end;
+}
+
+
+.serica-page .project-footer-copyright {
+  grid-column:
+    1 / -1;
+
+  grid-row: 2;
+
+  justify-self: center;
+
+  margin: 0;
+
+  font-size: 7px;
+
+  text-align: center;
+
+  white-space: normal;
+}
+
+
+.serica-page .project-footer-link {
+  font-size: 7px;
+
+  gap: 6px;
+
+  white-space: nowrap;
+}
+
+
+.serica-page .project-footer-back-icon,
+.serica-page .project-footer-next-icon {
+  width: 9px;
+  height: 9px;
+}
+
+/* ==========================================================
+   SERICA PAGE — MOBILE
+========================================================== */
+
+
+/* Project Header */
+
+.serica-page .project-header {
+  min-height: 64px;
+  height: auto;
+
+  padding:
+    14px
+    var(--page-padding);
+}
+
+
+.serica-page .project-header-link {
+  font-size: 8px;
+
+  gap: 6px;
+}
+
+
+.serica-page .project-header-logo {
+  font-size: 10px;
+}
+
+
+.serica-page .project-back-icon {
+  width: 10px;
+  height: 10px;
+}
+
+
+
+/* ==========================================================
+   PROJECT OVERVIEW
+========================================================== */
+
+.serica-page .project-overview {
+  padding:
+    72px
+    var(--page-padding)
+    70px;
+}
+
+
+.serica-page .project-intro {
+  display: flex;
+
+  flex-direction: column;
+
+  width: 100%;
+
+  gap: 30px;
+
+  margin-bottom: 48px;
+}
+
+
+.serica-page .project-detail-title {
+  width: 100%;
+
+  font-size: 48px;
+
+  line-height: 1;
+}
+
+
+.serica-page .project-detail-description {
+  width: 100%;
+
+  max-width: none;
+
+  font-size: 15px;
+
+  line-height: 1.6;
+}
+
+
+
+/* Project Info: desktop 4 kolon → mobile 2x2 */
+
+.serica-page .project-info-grid {
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+}
+
+
+.serica-page .project-info-item {
+  min-height: 94px;
+
+  padding:
+    18px
+    14px;
+}
+
+
+.serica-page .project-info-item + .project-info-item {
+  border-left: none;
+}
+
+
+.serica-page .project-info-item:nth-child(even) {
+  border-left:
+    1px
+    solid
+    var(--color-border);
+}
+
+
+.serica-page .project-info-item:nth-child(n + 3) {
+  border-top:
+    1px
+    solid
+    var(--color-border);
+}
+
+
+.serica-page .project-info-label {
+  font-size: 9px;
+}
+
+
+.serica-page .project-info-value {
+  font-size: 14px;
+}
+
+
+.serica-page .project-detail-tags {
+  padding:
+    16px
+    14px;
+
+  gap: 6px;
+}
+
+
+
+/* ==========================================================
+   SHARED SERICA SECTION TITLES
+========================================================== */
+
+.serica-page .serica-design-section,
+.serica-page .serica-touchpoints-section,
+.serica-page .serica-flow-section,
+.serica-page .serica-branding-section {
+  padding:
+    80px
+    var(--page-padding);
+}
+
+
+.serica-page .serica-section-title {
+  margin-bottom: 36px;
+
+  font-size: 36px;
+
+  line-height: 1.2;
+}
+
+
+
+/* ==========================================================
+   DESIGN WORK — ABOUT SERICA
+========================================================== */
+
+.serica-page .serica-work-header {
+  min-height: auto;
+
+  padding:
+    15px
+    14px;
+}
+
+
+.serica-page .serica-work-content {
+  display: flex;
+
+  flex-direction: column;
+
+  width: 100%;
+
+  gap: 30px;
+
+  padding:
+    26px
+    14px;
+}
+
+
+.serica-page .serica-work-copy {
+  width: 100%;
+
+  max-width: none;
+}
+
+
+.serica-page .serica-work-copy p {
+  width: 100%;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+}
+
+
+.serica-page .serica-work-tags {
+  gap: 6px;
+}
+
+
+
+/* Video */
+
+.serica-page .serica-video-frame {
+  width: 100%;
+
+  padding: 8px;
+
+  border-radius: 18px;
+}
+
+
+.serica-page .serica-video-wrapper {
+  width: 100%;
+
+  border-radius: 12px;
+}
+
+
+.serica-page .serica-about-video {
+  width: 100%;
+
+  height: auto;
+}
+
+
+.serica-page .serica-video-toggle {
+  width: 52px;
+  height: 52px;
+}
+
+
+
+/* ==========================================================
+   TOUCHPOINTS
+========================================================== */
+
+.serica-page .serica-touchpoint-card + .serica-touchpoint-card {
+  margin-top: 24px;
+}
+
+
+.serica-page .serica-touchpoint-header {
+  min-height: auto;
+
+  padding:
+    14px;
+
+  flex-wrap: wrap;
+
+  gap: 10px;
+}
+
+
+.serica-page .serica-touchpoint-header-left {
+  min-width: 0;
+}
+
+
+.serica-page .serica-touchpoint-tool {
+  font-size: 9px;
+}
+
+
+.serica-page .serica-touchpoint-content {
+  display: flex;
+
+  flex-direction: column;
+
+  width: 100%;
+
+  gap: 30px;
+
+  padding:
+    26px
+    14px;
+}
+
+
+.serica-page .serica-touchpoint-copy {
+  width: 100%;
+
+  max-width: none;
+}
+
+
+.serica-page .serica-touchpoint-copy p {
+  width: 100%;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+}
+
+
+.serica-page .serica-touchpoint-tags {
+  margin-bottom: 18px;
+}
+
+
+
+/* Mockup container */
+
+.serica-page .serica-touchpoint-visual {
+  width: 100%;
+
+  min-height: 0;
+
+  padding:
+    16px
+    0;
+}
+
+
+
+/* App mockup mobile */
+
+.serica-page .serica-touchpoint-image--app {
+  width: auto;
+
+  max-width: 210px;
+
+  max-height: 430px;
+}
+
+
+
+/* Website mockup mobile */
+
+.serica-page .serica-touchpoint-image--website {
+  width: 100%;
+
+  max-width: 100%;
+
+  max-height: none;
+}
+
+
+
+/* ==========================================================
+   UI FLOW DIAGRAMS
+========================================================== */
+
+.serica-page .serica-flow-card + .serica-flow-card {
+  margin-top: 24px;
+}
+
+
+.serica-page .serica-flow-header {
+  min-height: auto;
+
+  padding:
+    14px;
+
+  flex-wrap: wrap;
+
+  gap: 10px;
+}
+
+
+.serica-page .serica-flow-tool {
+  font-size: 9px;
+}
+
+
+.serica-page .serica-flow-visual {
+  width: 100%;
+
+  padding:
+    16px
+    10px;
+}
+
+
+.serica-page .serica-flow-image {
+  width: 100%;
+
+  max-width: none;
+
+  height: auto;
+}
+
+
+
+/* ==========================================================
+   BRAND IDENTITY
+========================================================== */
+
+.serica-page .serica-brand-card + .serica-brand-card {
+  margin-top: 24px;
+}
+
+
+.serica-page .serica-brand-header {
+  min-height: auto;
+
+  padding:
+    14px;
+
+  flex-wrap: wrap;
+
+  align-items: flex-start;
+
+  gap: 10px;
+}
+
+
+.serica-page .serica-brand-header-left {
+  min-width: 0;
+}
+
+
+.serica-page .serica-brand-tools {
+  width: 100%;
+
+  justify-content: flex-start;
+
+  gap: 6px;
+}
+
+
+.serica-page .serica-brand-tool {
+  font-size: 9px;
+
+  white-space: normal;
+}
+
+
+.serica-page .serica-brand-content {
+  padding:
+    24px
+    14px;
+}
+
+
+
+/* Palette */
+
+.serica-page .serica-brand-palette-block {
+  margin-bottom: 34px;
+}
+
+
+.serica-page .serica-brand-palette-image {
+  width: 100%;
+
+  max-width: none;
+}
+
+
+
+/* Typography + Marks:
+   desktopta yan yana, mobileda alt alta */
+
+.serica-page .serica-brand-middle {
+  display: flex;
+
+  flex-direction: column;
+
+  width: 100%;
+
+  gap: 34px;
+}
+
+
+.serica-page .serica-brand-typography-image,
+.serica-page .serica-brand-marks-image {
+  width: 100%;
+
+  max-width: none;
+}
+
+
+
+/* ==========================================================
+   POSTER DESIGN
+========================================================== */
+
+.serica-page .serica-poster-grid {
+  padding:
+    16px
+    14px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  width: 100%;
+
+  gap: 18px;
+}
+
+
+.serica-page .serica-poster-visual {
+  width: 100%;
+
+  height: auto;
+}
+
+
+.serica-page .serica-poster-image {
+  width: 100%;
+
+  height: auto;
+
+  object-fit: contain;
+}
+
+
+
+/* ==========================================================
+   PROJECT FOOTER
+========================================================== */
+
+.serica-page .project-footer {
+  width: 100%;
+
+  min-height: auto;
+
+  padding:
+    20px
+    var(--page-padding);
+
+  display: grid;
+
+  grid-template-columns:
+    1fr
+    1fr;
+
+  grid-template-rows:
+    auto
+    auto;
+
+  column-gap: 16px;
+  row-gap: 18px;
+
+  align-items: center;
+}
+
+
+.serica-page .project-footer-back {
+  grid-column: 1;
+  grid-row: 1;
+
+  justify-self: start;
+}
+
+
+.serica-page .project-footer-next {
+  grid-column: 2;
+  grid-row: 1;
+
+  justify-self: end;
+}
+
+
+.serica-page .project-footer-copyright {
+  grid-column:
+    1 / -1;
+
+  grid-row: 2;
+
+  justify-self: center;
+
+  margin: 0;
+
+  font-size: 7px;
+
+  text-align: center;
+
+  white-space: normal;
+}
+
+
+.serica-page .project-footer-link {
+  font-size: 7px;
+
+  gap: 6px;
+
+  white-space: nowrap;
+}
+
+
+.serica-page .project-footer-back-icon,
+.serica-page .project-footer-next-icon {
+  width: 9px;
+  height: 9px;
+}
+
+}
+
+

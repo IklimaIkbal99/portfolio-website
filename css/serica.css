@@ -1,0 +1,1043 @@
+.serica-page .project-header-spacer {
+  justify-self: end;
+
+  width: 1px;
+  height: 1px;
+}
+
+
+
+.serica-page .serica-overview {
+  width: 100%;
+}
+
+
+
+.serica-page .project-detail-description {
+  max-width: 650px;
+}
+
+
+
+.serica-page .project-info-grid {
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+}
+
+
+
+/* Design Work Section: Serica case study içeriğinin ana alanı */
+
+.serica-design-section {
+  width: 100%;
+
+  padding:
+    120px
+    var(--page-padding)
+    100px;
+}
+
+
+
+.serica-section-title {
+  margin:
+    0
+    0
+    48px;
+
+  font-family:
+    var(--font-serif);
+
+  font-size: 40px;
+
+  font-weight: 400;
+
+  line-height: 1.2;
+}
+
+
+
+/* Work Card */
+
+.serica-work-card {
+  width: 100%;
+
+  border:
+    1px
+    solid
+    var(--color-border);
+}
+
+
+
+/* Header: 01 | ABOUT SERICA */
+
+.serica-work-header {
+  min-height: 54px;
+
+  padding:
+    0
+    20px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  background-color:
+    var(--color-card-header);
+
+  border-bottom:
+    1px
+    solid
+    var(--color-border);
+}
+
+
+
+.serica-work-number {
+  font-family:
+    var(--font-mono);
+
+  font-size: 12px;
+
+  color:
+    var(--color-text-gray);
+}
+
+
+
+.serica-work-divider {
+  width: 1px;
+
+  height: 20px;
+
+  background-color:
+    var(--color-border);
+}
+
+
+
+.serica-work-name {
+  font-family:
+    var(--font-mono);
+
+  font-size: 12px;
+
+  font-weight: 500;
+
+  letter-spacing: 0.04em;
+
+  text-transform: uppercase;
+}
+
+
+
+/* Content: desktopta metin solda, video sağda */
+
+.serica-work-content {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(420px, 1fr);
+
+  column-gap: 64px;
+
+  align-items: center;
+
+  padding:
+    36px
+    20px;
+}
+
+
+
+/* Text */
+
+.serica-work-copy {
+  max-width: 620px;
+}
+
+
+
+.serica-work-copy p {
+  margin:
+    0
+    0
+    30px;
+
+  font-family:
+    var(--font-sans);
+
+  font-size: 16px;
+
+  font-weight: 300;
+
+  line-height: 1.65;
+
+  color:
+    var(--color-text-gray);
+}
+
+
+
+.serica-work-copy p:last-of-type {
+  margin-bottom: 28px;
+}
+
+
+
+/* Tags */
+
+.serica-work-tags {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 7px;
+}
+
+
+
+.serica-work-tag {
+  min-height: 28px;
+
+  padding:
+    0
+    10px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  border:
+    1px
+    solid
+    var(--color-border);
+
+  font-family:
+    var(--font-mono);
+
+  font-size: 12px;
+
+  letter-spacing: 0.04em;
+}
+
+
+
+/* Video Frame: dıştaki rounded device/frame görünümü */
+
+.serica-video-frame {
+  width: 100%;
+
+  padding: 18px;
+
+  border:
+    1px
+    solid
+    var(--color-text-gray);
+
+  border-radius: 28px;
+}
+
+
+
+/* Video Wrapper: overlay play button için relative container */
+
+.serica-video-wrapper {
+  position: relative;
+
+  width: 100%;
+
+  overflow: hidden;
+
+  border-radius: 18px;
+
+  background-color: #000;
+}
+
+
+
+/* Video */
+
+.serica-about-video {
+  display: block;
+
+  width: 100%;
+
+  height: auto;
+
+  aspect-ratio: 16 / 9;
+
+  object-fit: cover;
+
+  cursor: pointer;
+}
+
+
+
+/* Play Button: videonun merkezinde görünür */
+
+.serica-video-toggle {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  transform:
+    translate(-50%, -50%);
+
+  width: 76px;
+  height: 76px;
+
+  padding: 0;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border: 0;
+
+  background: transparent;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+
+
+.serica-video-toggle:hover {
+  transform:
+    translate(-50%, -50%)
+    scale(1.08);
+}
+
+
+
+/* Video oynarken JS bu class'ı ekler */
+
+.serica-video-toggle.is-hidden {
+  opacity: 0;
+
+  pointer-events: none;
+}
+
+
+
+.serica-video-play-icon {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
+
+.serica-touchpoints-section {
+  width: 100%;
+
+  padding:
+    120px
+    var(--page-padding)
+    100px;
+}
+
+
+.serica-touchpoint-card {
+  width: 100%;
+
+  border:
+    1px
+    solid
+    var(--color-border);
+}
+
+
+.serica-touchpoint-card + .serica-touchpoint-card {
+  margin-top: 28px;
+}
+
+
+.serica-touchpoint-header {
+  min-height: 54px;
+
+  padding:
+    0
+    18px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 20px;
+
+  background-color:
+    var(--color-card-header);
+
+  border-bottom:
+    1px
+    solid
+    var(--color-border);
+}
+
+
+.serica-touchpoint-header-left {
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+}
+
+
+.serica-touchpoint-number {
+  font-family:
+    var(--font-mono);
+
+  font-size: 12px;
+
+  color:
+    var(--color-text-gray);
+}
+
+
+.serica-touchpoint-divider {
+  width: 1px;
+
+  height: 20px;
+
+  background-color:
+    var(--color-border);
+}
+
+
+.serica-touchpoint-name {
+  font-family:
+    var(--font-mono);
+
+  font-size: 12px;
+
+  font-weight: 500;
+
+  letter-spacing: 0.04em;
+
+  text-transform: uppercase;
+}
+
+
+.serica-touchpoint-tool {
+  padding:
+    5px
+    9px;
+
+  border:
+    1px
+    solid
+    var(--color-border);
+
+  font-family:
+    var(--font-mono);
+
+  font-size: 12px;
+
+  color:
+    var(--color-text-gray);
+}
+
+
+.serica-touchpoint-content {
+  display: grid;
+
+  grid-template-columns:
+    minmax(320px, 0.9fr)
+    minmax(420px, 1.1fr);
+
+  column-gap: 56px;
+
+  align-items: center;
+
+  padding:
+    28px
+    18px;
+}
+
+
+.serica-touchpoint-copy {
+  max-width: 560px;
+}
+
+
+.serica-touchpoint-copy p {
+  margin:
+    0
+    0
+    24px;
+
+  font-family:
+    var(--font-sans);
+
+  font-size: 16px;
+
+  font-weight: 300;
+
+  line-height: 1.6;
+
+  color:
+    var(--color-text-gray);
+}
+
+
+.serica-touchpoint-tags {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 6px;
+
+  margin-bottom: 20px;
+}
+
+
+.serica-touchpoint-tag {
+  min-height: 28px;
+
+  padding:
+    0
+    10px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  border:
+    1px
+    solid
+    var(--color-border);
+
+  font-family:
+    var(--font-mono);
+
+  font-size: 12px;
+
+  letter-spacing: 0.04em;
+}
+
+
+.serica-touchpoint-link {
+  min-height: 40px;
+
+  padding:
+    0
+    16px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  border:
+    1px
+    solid
+    var(--color-border);
+
+  font-family:
+    var(--font-mono);
+
+  font-size: 12px;
+
+  letter-spacing: 0.08em;
+
+  text-transform: uppercase;
+
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+
+.serica-touchpoint-link:hover {
+  background-color:
+    var(--color-text);
+
+  color:
+    var(--color-white);
+}
+
+
+.serica-touchpoint-link-icon {
+  width: 11px;
+  height: 11px;
+
+  fill: none;
+
+  stroke:
+    currentColor;
+
+  stroke-width: 1.08333;
+
+  stroke-linecap: round;
+
+  stroke-linejoin: round;
+
+  flex-shrink: 0;
+}
+
+
+.serica-touchpoint-visual {
+  width: 100%;
+
+  min-height: 420px;
+
+  padding: 24px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+}
+
+
+.serica-touchpoint-image {
+  display: block;
+
+  width: auto;
+  height: auto;
+
+  max-width: 100%;
+  max-height: 100%;
+
+  object-fit: contain;
+}
+
+
+/* App mockup: telefon biraz daha küçük kontrollü dursun */
+.serica-touchpoint-image--app {
+  max-width: 320px;
+  max-height: 560px;
+}
+
+
+/* Website mockup: yatay mockup alanı doldursun ama taşmasın */
+.serica-touchpoint-image--website {
+  width: 100%;
+  max-width: 760px;
+  max-height: 430px;
+}
+
+.serica-flow-section {
+  width: 100%;
+
+  padding:
+    120px
+    var(--page-padding)
+    100px;
+}
+
+
+.serica-flow-card {
+  width: 100%;
+
+  border:
+    1px
+    solid
+    var(--color-border);
+}
+
+
+.serica-flow-card + .serica-flow-card {
+  margin-top: 28px;
+}
+
+
+.serica-flow-header {
+  min-height: 54px;
+
+  padding:
+    0
+    18px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 20px;
+
+  background-color:
+    var(--color-card-header);
+
+  border-bottom:
+    1px
+    solid
+    var(--color-border);
+}
+
+
+.serica-flow-header-left {
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+}
+
+
+.serica-flow-number {
+  font-family:
+    var(--font-mono);
+
+  font-size: 12px;
+
+  color:
+    var(--color-text-gray);
+}
+
+
+.serica-flow-divider {
+  width: 1px;
+
+  height: 20px;
+
+  background-color:
+    var(--color-border);
+}
+
+
+.serica-flow-name {
+  font-family:
+    var(--font-mono);
+
+  font-size: 12px;
+
+  font-weight: 500;
+
+  letter-spacing: 0.04em;
+
+  text-transform: uppercase;
+}
+
+
+.serica-flow-tool {
+  padding:
+    5px
+    9px;
+
+  border:
+    1px
+    solid
+    var(--color-border);
+
+  font-family:
+    var(--font-mono);
+
+  font-size: 12px;
+
+  color:
+    var(--color-text-gray);
+
+  white-space: nowrap;
+}
+
+
+.serica-flow-visual {
+  width: 100%;
+
+  padding:
+    28px
+    18px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+
+.serica-flow-image {
+  display: block;
+
+  width: 100%;
+
+  max-width: 1120px;
+
+  height: auto;
+
+  object-fit: contain;
+}
+
+.serica-branding-section {
+  width: 100%;
+
+  padding:
+    120px
+    var(--page-padding)
+    100px;
+}
+
+
+.serica-brand-card {
+  width: 100%;
+
+  border:
+    1px
+    solid
+    var(--color-border);
+}
+
+
+.serica-brand-card + .serica-brand-card {
+  margin-top: 28px;
+}
+
+
+/* Card Header */
+
+.serica-brand-header {
+  min-height: 54px;
+
+  padding:
+    0
+    18px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 20px;
+
+  background-color:
+    var(--color-card-header);
+
+  border-bottom:
+    1px
+    solid
+    var(--color-border);
+}
+
+
+.serica-brand-header-left {
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+}
+
+
+.serica-brand-number {
+  font-family:
+    var(--font-mono);
+
+  font-size: 12px;
+
+  color:
+    var(--color-text-gray);
+}
+
+
+.serica-brand-divider {
+  width: 1px;
+
+  height: 20px;
+
+  background-color:
+    var(--color-border);
+}
+
+
+.serica-brand-name {
+  font-family:
+    var(--font-mono);
+
+  font-size: 12px;
+
+  font-weight: 500;
+
+  letter-spacing: 0.04em;
+
+  text-transform: uppercase;
+}
+
+
+.serica-brand-tools {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  justify-content: flex-end;
+
+  gap: 7px;
+}
+
+
+.serica-brand-tool {
+  padding:
+    5px
+    9px;
+
+  border:
+    1px
+    solid
+    var(--color-border);
+
+  font-family:
+    var(--font-mono);
+
+  font-size: 12px;
+
+  color:
+    var(--color-text-gray);
+
+  white-space: nowrap;
+}
+
+
+/* Brand Identity Content */
+
+.serica-brand-content {
+  width: 100%;
+
+  padding:
+    28px
+    24px;
+}
+
+
+.serica-brand-block {
+  width: 100%;
+}
+
+
+.serica-brand-palette-block {
+  margin-bottom: 34px;
+}
+
+
+.serica-brand-subtitle {
+  margin:
+    0
+    0
+    18px;
+
+  padding-top: 2px;
+
+  border-top:
+    1px
+    solid
+    var(--color-border);
+
+  font-family:
+    var(--font-sans);
+
+  font-size: 14px;
+
+  font-weight: 400;
+
+  line-height: 1.4;
+}
+
+
+/* Palette başlığında üst çizgi istemiyorsak */
+
+.serica-brand-palette-block .serica-brand-subtitle {
+  border-top: none;
+}
+
+
+/* Typography ve Brand Marks yan yana */
+
+.serica-brand-middle {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1.15fr)
+    minmax(0, 0.85fr);
+
+  column-gap: 24px;
+
+  align-items: start;
+}
+
+
+/* Shared brand images */
+
+.serica-brand-image {
+  display: block;
+
+  width: 100%;
+
+  height: auto;
+
+  object-fit: contain;
+}
+
+
+.serica-brand-palette-image {
+  max-width: 560px;
+}
+
+
+.serica-brand-typography-image {
+  max-width: 620px;
+}
+
+
+.serica-brand-marks-image {
+  max-width: 460px;
+}
+
+/* Poster design */
+
+.serica-poster-grid {
+  width: 100%;
+
+  padding:
+    24px;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 24px;
+
+  align-items: stretch;
+}
+
+
+.serica-poster-visual {
+  width: 100%;
+
+  height: 440px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+
+.serica-poster-image {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
+
