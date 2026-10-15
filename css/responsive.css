@@ -1,0 +1,1516 @@
+
+@media (max-width: 900px) {
+
+    :root {
+
+        --page-padding: 28px;
+
+    }
+
+
+    .hero-main {
+
+        grid-template-columns: 1fr;
+
+        max-width: 640px;
+
+        row-gap: 30px;
+
+    }
+
+
+    .hero-divider {
+
+        width: 100%;
+
+        height: 1px;
+
+    }
+
+
+    .hero-description {
+
+        max-width: 100%;
+
+    }
+
+
+    .first-name {
+
+        white-space: normal;
+
+    }
+
+    .projects-header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+
+    .project-content {
+
+        grid-template-columns: 1fr;
+
+        row-gap: 28px;
+
+    }
+
+    .background-grid {
+        grid-template-columns: 1fr;
+
+        row-gap: 48px;
+    }
+
+
+    .about-copy {
+        max-width: 100%;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+
+        row-gap: 60px;
+    }
+
+
+    .contact-intro {
+        max-width: 650px;
+    }
+
+
+    .contact-card {
+        max-width: 650px;
+    }
+
+}
+
+
+/*
+   MOBILE — MAX WIDTH 600PX
+
+  mobile responsivility için burada çalış
+ */
+
+@media (max-width: 600px) {
+
+  /* 
+     01 — GLOBAL MOBILE SETTINGS
+   */
+
+body {
+  overflow-x: hidden;
+}
+
+  :root {
+    --page-padding: 20px;
+  }
+
+
+  /* 
+      HEADER / NAVIGATION
+  */
+
+  .site-header {
+    height: auto;
+
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+
+
+  .main-nav {
+    gap: 14px;
+  }
+
+
+  .nav-link {
+    font-size: 7px;
+  }
+
+
+
+  /* 
+     HERO
+   */
+
+  .hero {
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+
+
+  .profile-image {
+    width: 78px;
+    height: 78px;
+  }
+
+
+  .availability-box {
+    margin-top: 18px;
+  }
+
+
+  .availability-item {
+    min-height: 28px;
+
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+
+  .text-mono-meta {
+    font-size: 7px;
+  }
+
+
+
+  /* Hero main layout vertical oluyo */
+
+  .hero-main {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+
+    margin-top: 56px;
+  }
+
+
+
+  /* Name */
+
+  .hero-name {
+    width: 100%;
+
+    justify-self: auto;
+
+    text-align: center;
+  }
+
+
+  .hero-title {
+    width: 100%;
+  }
+
+
+  .first-name {
+    display: block;
+
+    white-space: normal;
+
+    text-align: center;
+
+    font-size: 46px;
+  }
+
+
+  .last-name {
+    display: block;
+
+    margin-top: 8px;
+    margin-left: 0;
+
+    text-align: center;
+
+    font-size: 42px;
+  }
+
+
+
+  /* Desktop vertical line horizontal oldu */
+
+  .hero-divider {
+    width: 100%;
+    height: 1px;
+
+    margin: 32px 0;
+
+    background-color: var(--color-border);
+  }
+
+
+
+  /* Description */
+
+  .hero-description {
+    width: 100%;
+    max-width: none;
+
+    padding-left: 0;
+
+    border-left: none;
+  }
+
+
+  .body-text {
+    font-size: 15px;
+
+    line-height: 1.55;
+  }
+
+
+
+  /* Buttons */
+
+  .hero-actions {
+    margin-top: 42px;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 10px;
+  }
+
+
+
+  /* 
+     04 — SELECTED PROJECTS
+   */
+
+  .projects-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+
+  .projects-header {
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 24px;
+  }
+
+
+  .project-filters {
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 8px;
+  }
+
+
+
+  /* Project metadata header */
+
+  .project-meta {
+    min-height: auto;
+
+    padding: 14px;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 12px;
+  }
+
+
+  .project-category {
+    gap: 10px;
+  }
+
+
+  .project-status {
+    gap: 8px;
+  }
+
+
+
+  /* Project title */
+
+  .project-title-row {
+    padding: 18px 14px;
+  }
+
+
+  .project-title {
+    font-size: 26px;
+  }
+
+
+
+  /* Desktopta griddi mobile da vertical flexbox oluyo
+  */
+
+  .project-content {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+
+    gap: 22px;
+
+    padding: 22px 14px 26px;
+  }
+
+
+
+  /* Remove desktop Grid positioning */
+
+  .project-description,
+  .project-tags,
+  .project-link {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+
+
+  /* Description */
+
+  .project-description {
+    width: 100%;
+    max-width: none;
+
+    order: 1;
+  }
+
+
+  .project-description p {
+    width: 100%;
+
+    margin: 0;
+
+    font-size: 16px;
+
+    line-height: 1.55;
+  }
+
+
+
+  /*Tags */
+
+  .project-tags {
+    width: 100%;
+
+    order: 2;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    align-items: flex-start;
+    align-content: flex-start;
+
+    gap: 6px;
+  }
+
+
+  .project-tag {
+    min-height: 26px;
+
+    padding: 0 9px;
+
+    font-size: 12px;
+  }
+
+
+
+  /* CTA */
+
+  .project-link {
+    order: 3;
+
+    width: fit-content;
+
+    align-self: flex-start;
+
+    justify-self: auto;
+
+    min-height: 38px;
+  }
+
+
+
+  /* 
+     WORK HISTORY
+  */
+
+  .experience-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+
+  .experience-header {
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 24px;
+  }
+
+
+  .experience-filters {
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 8px;
+  }
+
+
+
+  /* Top row */
+
+  .experience-meta {
+    min-height: auto;
+
+    padding: 16px 14px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 14px;
+  }
+
+
+  .experience-role {
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 10px;
+  }
+
+
+  .experience-company {
+    font-size: 12px;
+  }
+
+
+  .experience-position {
+    font-size: 12px;
+  }
+
+
+  .experience-date {
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+
+    gap: 10px;
+  }
+
+
+
+  /* Content row */
+
+  .experience-content {
+    display: flex;
+    flex-direction: column;
+
+    min-height: auto;
+
+    padding: 22px 14px;
+
+    gap: 24px;
+  }
+
+
+  .experience-description {
+    width: 100%;
+    max-width: none;
+
+    font-size: 16px;
+
+    line-height: 1.55;
+  }
+
+
+  .experience-side {
+    width: 100%;
+
+    align-items: flex-start;
+
+    text-align: left;
+
+    gap: 10px;
+  }
+
+
+
+  /* 
+     06 — BACKGROUND
+   */
+
+  .background-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+
+  .background-title {
+    margin-bottom: 40px;
+  }
+
+
+
+  /* Desktop two-column Grid vertical oluoy */
+
+  .background-grid {
+    display: flex;
+    flex-direction: column;
+
+    gap: 40px;
+  }
+
+
+  .background-left,
+  .background-right {
+    width: 100%;
+
+    min-width: 0;
+  }
+
+
+  .background-left {
+    gap: 36px;
+  }
+
+
+  .background-right {
+    gap: 24px;
+  }
+
+
+
+  /* About */
+
+  .about-copy {
+    width: 100%;
+    max-width: none;
+  }
+
+
+  .about-copy p {
+    font-size: 16px;
+
+    line-height: 1.6;
+  }
+
+
+
+  /* Skills */
+
+  .skill-row {
+    grid-template-columns:
+      100px
+      minmax(60px, 1fr)
+      24px;
+
+    column-gap: 8px;
+
+    min-height: 28px;
+  }
+
+
+  .skill-name {
+    white-space: normal;
+  }
+
+
+
+  /* Education */
+
+  .education-heading {
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 8px;
+  }
+
+
+  .education-heading h3 {
+    font-size: 17px;
+  }
+
+
+  .education-year {
+    font-size: 12px;
+  }
+
+
+  .education-school {
+    font-size: 12px;
+  }
+
+
+  .education-description {
+    font-size: 12px;
+  }
+
+
+
+  /* Languages */
+
+  .language-row {
+    min-height: 48px;
+
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+
+
+  /* Info cards */
+
+  .info-card-header {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+
+  .skills-list,
+  .tools-area,
+  .knowledge-content,
+  .education-item {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+
+
+/* 
+    CONTACT
+ */
+
+.contact-section {
+  width: 100%;
+
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+}
+
+
+/* Desktop Grid vertical oluyo */
+
+.contact-grid {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+
+  gap: 48px;
+}
+
+
+.contact-intro {
+  width: 100%;
+  max-width: none;
+}
+
+
+/* Contact title */
+
+.contact-title {
+  width: 100%;
+}
+
+
+.contact-title-main {
+  display: block;
+
+  font-size: 48px;
+
+  line-height: 1;
+}
+
+
+.contact-title-italic {
+  display: block;
+
+  margin-top: 8px;
+
+  font-size: 46px;
+
+  line-height: 1.05;
+}
+
+
+/* Description */
+
+.contact-description {
+  width: 100%;
+  max-width: none;
+
+  margin-top: 32px;
+
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+
+/* Contact card */
+
+.contact-card {
+  width: 100%;
+  max-width: 100%;
+
+  min-width: 0;
+}
+
+
+/* Card header */
+
+.contact-card-header {
+  min-height: 52px;
+
+  padding:
+    14px
+    14px;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: space-between;
+
+  gap: 10px;
+}
+
+
+/* her contact row vertical oluyo */
+
+.contact-row {
+  min-height: auto;
+
+  padding:
+    18px
+    14px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-start;
+
+  gap: 8px;
+}
+
+
+/* EMAIL / PHONE / LINKEDIN */
+
+.contact-label {
+  font-size: 12px;
+}
+
+
+/* Actual value */
+
+.contact-value {
+  width: 100%;
+  min-width: 0;
+
+  justify-self: auto;
+
+  font-size: 13px;
+
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+
+/* LinkedIn */
+
+.contact-link {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: flex-start;
+
+  gap: 8px;
+}
+
+/* 
+    FOOTER
+ */
+
+.site-footer {
+  display: block;
+
+  width: 100%;
+
+  padding:
+    22px
+    var(--page-padding);
+
+  border-top:
+    1px
+    solid
+    var(--color-border);
+}
+
+
+.site-footer .section-container {
+  width: 100%;
+}
+
+
+.footer-text {
+  margin: 0;
+
+  font-size: 12px;
+
+  line-height: 1.5;
+
+  white-space: normal;
+}
+
+/* Breathment Mobile: project detail sayfasını küçük ekran için yeniden düzenler */
+
+.breathment-page .project-header {
+  height: auto;
+
+  min-height: 64px;
+
+  padding:
+    14px
+    var(--page-padding);
+
+  grid-template-columns:
+    1fr
+    auto
+    1fr;
+}
+
+
+/* Header Links Mobile: uzun yazıların navbarı bozmasını önler */
+
+.breathment-page .project-header-link {
+  font-size: 7px;
+
+  gap: 6px;
+}
+
+
+.breathment-page .project-header-logo {
+  font-size: 10px;
+}
+
+
+.breathment-page .project-back-icon,
+.breathment-page .project-header-icon {
+  width: 10px;
+  height: 10px;
+}
+
+
+
+/* Project Overview Mobile: title ve description artık yan yana değil alt alta */
+
+.breathment-page .project-overview {
+  padding:
+    72px
+    var(--page-padding)
+    70px;
+}
+
+
+.breathment-page .project-intro {
+  display: flex;
+
+  flex-direction: column;
+
+  width: 100%;
+
+  gap: 30px;
+
+  margin-bottom: 48px;
+}
+
+
+.breathment-page .project-detail-title {
+  width: 100%;
+
+  font-size: 48px;
+
+  line-height: 1;
+}
+
+
+.breathment-page .project-detail-description {
+  width: 100%;
+
+  max-width: none;
+
+  font-size: 15px;
+
+  line-height: 1.6;
+}
+
+
+
+/* Project Info Mobile: desktop 4 kolon yerine 2x2 grid */
+
+.breathment-page .project-info-grid {
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+}
+
+
+.breathment-page .project-info-item {
+  min-height: 94px;
+
+  padding:
+    18px
+    14px;
+}
+
+
+/* Desktop sadece yatay divider kullanıyordu.
+   Mobile 2x2 yapıda hem yatay hem dikey border gerekir. */
+
+.breathment-page .project-info-item + .project-info-item {
+  border-left: none;
+}
+
+
+.breathment-page .project-info-item:nth-child(even) {
+  border-left:
+    1px
+    solid
+    var(--color-border);
+}
+
+
+.breathment-page .project-info-item:nth-child(n + 3) {
+  border-top:
+    1px
+    solid
+    var(--color-border);
+}
+
+
+.breathment-page .project-info-label {
+  font-size: 8px;
+}
+
+
+.breathment-page .project-info-value {
+  font-size: 14px;
+}
+
+
+
+/* Overview Tags Mobile */
+
+.breathment-page .project-detail-tags {
+  padding:
+    16px
+    14px;
+
+  gap: 6px;
+}
+
+
+.breathment-page .project-detail-tag {
+  font-size: 8px;
+}
+
+
+
+/* Design Work Mobile */
+
+.breathment-page .design-work-section {
+  padding:
+    80px
+    var(--page-padding);
+}
+
+
+.breathment-page .design-work-title {
+  margin-bottom: 36px;
+
+  font-size: 38px;
+}
+
+
+/* Card Header Mobile */
+
+.breathment-page .design-work-header {
+  min-height: auto;
+
+  padding:
+    16px
+    14px;
+
+  flex-wrap: wrap;
+
+  gap: 10px;
+}
+
+
+.breathment-page .design-work-name {
+  font-size: 9px;
+}
+
+
+
+/* Card Content Mobile: desktop iki kolon yerine tamamen vertical */
+
+.breathment-page .design-work-content {
+  display: flex;
+
+  flex-direction: column;
+
+  width: 100%;
+
+  gap: 30px;
+
+  padding:
+    26px
+    14px;
+}
+
+
+/* Copy Mobile: artık dar desktop kolonu kullanılmaz */
+
+.breathment-page .design-work-copy {
+  width: 100%;
+
+  max-width: none;
+}
+
+
+.breathment-page .design-work-copy p {
+  width: 100%;
+
+  margin-bottom: 22px;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+}
+
+
+/* Design Work Tags */
+
+.breathment-page .design-work-tags {
+  width: 100%;
+
+  margin-bottom: 22px;
+
+  gap: 6px;
+}
+
+
+
+/* Prototype CTA */
+
+.breathment-page .design-work-link {
+  width: fit-content;
+
+  min-height: 38px;
+}
+
+
+
+/* App Screens Mobile: üç ekran artık yan yana sıkışmaz */
+
+.breathment-page .design-work-visuals {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 8px;
+
+  align-items: end;
+}
+
+
+.breathment-page .design-work-screen {
+  display: block;
+
+  width: 100%;
+
+  max-width: none;
+
+  height: auto;
+}
+
+
+
+/* Visual Work Mobile */
+
+.breathment-page .visual-work-section {
+  padding:
+    80px
+    var(--page-padding);
+}
+
+
+.breathment-page .visual-work-title {
+  margin-bottom: 36px;
+
+  font-size: 38px;
+}
+
+
+/* Visual Work Card Header */
+
+.breathment-page .visual-work-header {
+  min-height: auto;
+
+  padding:
+    14px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+
+  gap: 12px;
+}
+
+
+.breathment-page .visual-work-header-left {
+  width: 100%;
+
+  min-width: 0;
+}
+
+
+.breathment-page .visual-work-tool {
+  width: fit-content;
+
+  white-space: normal;
+}
+
+
+
+/* Visual Work Content: copy ve visual alt alta */
+
+.breathment-page .visual-work-content {
+  display: flex;
+
+  flex-direction: column;
+
+  width: 100%;
+
+  gap: 28px;
+
+  padding:
+    26px
+    14px;
+}
+
+
+.breathment-page .visual-work-copy {
+  width: 100%;
+
+  max-width: none;
+}
+
+
+.breathment-page .visual-work-copy p {
+  width: 100%;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+}
+
+
+/* Tags */
+
+.breathment-page .visual-work-tags {
+  width: 100%;
+
+  gap: 6px;
+}
+
+
+
+/* Illustration Responsive Assets:
+   desktop board gizlenir, mobile için export edilen iki board görünür */
+
+.breathment-page .illustration-visual-desktop {
+  display: none;
+}
+
+
+.breathment-page .illustration-visual-mobile {
+  display: flex;
+
+  flex-direction: column;
+
+  width: 100%;
+
+  gap: 16px;
+}
+
+
+.breathment-page .illustration-grid-image {
+  display: block;
+
+  width: 100%;
+
+  height: auto;
+}
+
+
+
+/* Character Design Visuals Mobile */
+
+.breathment-page .character-visuals {
+  display: flex;
+
+  flex-direction: column;
+
+  width: 100%;
+
+  gap: 16px;
+}
+
+
+.breathment-page .character-image {
+  width: 100%;
+
+  height: auto;
+}
+
+
+
+/* Character Animation Mobile */
+
+.breathment-page .character-animation-section {
+  padding:
+    80px
+    var(--page-padding);
+}
+
+
+.breathment-page .character-animation-title {
+  margin-bottom: 36px;
+
+  font-size: 38px;
+}
+
+
+/* Animation Header */
+
+.breathment-page .character-animation-header {
+  min-height: auto;
+
+  padding:
+    14px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+
+  gap: 12px;
+}
+
+
+.breathment-page .character-animation-tools {
+  width: 100%;
+
+  justify-content: flex-start;
+
+  gap: 6px;
+}
+
+
+.breathment-page .character-animation-tool {
+  white-space: normal;
+}
+
+
+
+/* Animation Content */
+
+.breathment-page .character-animation-content {
+  display: flex;
+
+  flex-direction: column;
+
+  width: 100%;
+
+  gap: 30px;
+
+  padding:
+    26px
+    14px;
+}
+
+
+.breathment-page .character-animation-copy {
+  width: 100%;
+
+  max-width: none;
+}
+
+
+.breathment-page .character-animation-copy p {
+  width: 100%;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+}
+
+
+
+/* GIF Mobile */
+
+.breathment-page .character-animation-visual {
+  width: 100%;
+}
+
+
+.breathment-page .character-animation-gif {
+  width: 100%;
+
+  max-width: 320px;
+
+  height: auto;
+
+  margin:
+    0
+    auto;
+}
+
+
+
+/* Project Footer Mobile: desktop 3 kolonlu footer yerine vertical yapı */
+
+/* Project Footer Mobile: navigation üstte, copyright altta */
+
+.breathment-page .project-footer {
+  width: 100%;
+
+  min-height: auto;
+
+  padding:
+    22px
+    var(--page-padding);
+
+  display: grid;
+
+  grid-template-columns:
+    1fr
+    1fr;
+
+  row-gap: 20px;
+
+  align-items: center;
+
+  border-top:
+    1px
+    solid
+    var(--color-border);
+}
+
+
+/* Back */
+
+.breathment-page .project-footer-back {
+  justify-self: start;
+}
+
+
+/* Next Project */
+
+.breathment-page .project-footer-next {
+  justify-self: end;
+}
+
+
+/* Copyright: ikinci satırın tamamını kaplar */
+
+.breathment-page .project-footer-copyright {
+  grid-column:
+    1 / -1;
+
+  justify-self: center;
+
+  margin: 0;
+
+  font-size: 7px;
+
+  text-align: center;
+
+  white-space: normal;
+}
+
+
+.breathment-page .project-footer-link {
+  font-size: 8px;
+
+  gap: 7px;
+}
+
+}
+
+@media (max-width: 600px) {
+  .breathment-page .project-footer {
+    width: 100%;
+    min-height: auto;
+    padding: 20px var(--page-padding);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    column-gap: 16px;
+    row-gap: 18px;
+    align-items: center;
+    border-top: 1px solid var(--color-border);
+  }
+
+  .breathment-page .project-footer-back {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: start;
+  }
+
+  .breathment-page .project-footer-next {
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: end;
+  }
+
+  .breathment-page .project-footer-copyright {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    justify-self: center;
+    margin: 0;
+    font-size: 7px;
+    line-height: 1.4;
+    text-align: center;
+    white-space: normal;
+  }
+
+  .breathment-page .project-footer-link {
+    font-size: 7px;
+    gap: 6px;
+    white-space: nowrap;
+  }
+
+  .breathment-page .project-footer-back-icon,
+  .breathment-page .project-footer-next-icon {
+    width: 9px;
+    height: 9px;
+  }
+}

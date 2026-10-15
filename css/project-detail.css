@@ -1,0 +1,1202 @@
+
+
+.project-header {
+  width: 100%;
+  height: 76px;
+
+  position: sticky;
+  top: 0;
+
+  z-index: 1000;
+
+  padding:
+    0
+    var(--page-padding);
+
+  display: grid;
+
+  grid-template-columns:
+    1fr
+    auto
+    1fr;
+
+  align-items: center;
+
+  background-color: var(--color-background);
+
+  border-bottom:
+    1px
+    solid
+    var(--color-border);
+}
+
+
+/* 
+   LEFT + RIGHT LINKS
+ */
+
+.project-header-link {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  width: fit-content;
+
+  font-family: var(--font-mono);
+
+  font-size: 12px;
+
+  font-weight: 400;
+
+  letter-spacing: 0.06em;
+
+  text-transform: uppercase;
+
+  color: var(--color-muted);
+
+  transition: opacity 0.2s ease;
+}
+
+
+.project-header-link:hover {
+  opacity: 0.55;
+}
+
+
+.project-back-link {
+  justify-self: start;
+}
+
+
+/* Visit Site stays on the right */
+
+.project-visit-link {
+  justify-self: end;
+}
+
+
+/*
+   Logo ortalama
+ */
+
+.project-header-logo {
+  justify-self: center;
+
+  font-family: var(--font-mono);
+
+  font-size: 12px;
+
+  font-weight: 400;
+
+  letter-spacing: 0.08em;
+
+  white-space: nowrap;
+}
+
+
+.project-back-icon {
+  width: 13px;
+  height: 13px;
+
+  display: block;
+
+  flex-shrink: 0;
+}
+
+
+.project-header-icon {
+  width: 12px;
+  height: 12px;
+
+  fill: none;
+
+  stroke: currentColor;
+
+  stroke-width: 1.08333;
+
+  stroke-linecap: round;
+
+  stroke-linejoin: round;
+
+  flex-shrink: 0;
+}
+
+/* 
+   PROJECT DETAIL PAGE — SHARED CONTAINER
+
+ */
+
+.project-detail-container {
+  width: 100%;
+
+  max-width: var(--content-width);
+
+  margin: 0 auto;
+}
+
+
+
+/* 
+   PROJECT OVERVIEW SECTION
+ */
+
+.project-overview {
+  width: 100%;
+
+  padding:
+    120px
+    var(--page-padding)
+    100px;
+}
+
+
+
+/* 
+   PROJECT INTRO
+
+   Desktop:
+   TITLE               DESCRIPTION
+ */
+
+.project-intro {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 0.9fr)
+    minmax(0, 1.1fr);
+
+  column-gap: 90px;
+
+  align-items: center;
+
+  margin-bottom: 80px;
+}
+
+
+
+/* Main project title */
+
+.project-detail-title {
+  margin: 0;
+
+  font-family: var(--font-serif);
+
+  font-size: clamp(58px, 6vw, 72px);
+
+  font-weight: 400;
+
+  line-height: 1;
+}
+
+
+
+/* Intro paragraph */
+
+.project-detail-description {
+  max-width: 620px;
+
+  margin: 0;
+
+  font-family: var(--font-sans);
+
+  font-size: 20px;
+
+  font-weight: 400;
+
+  line-height: 1.65;
+
+  color: var(--color-text-gray);
+}
+
+/* 
+   PROJECT INFORMATION CARD
+ */
+
+.project-info-card {
+  width: 100%;
+
+  border:
+    1px
+    solid
+    var(--color-border);
+}
+
+/* 
+   PROJECT INFORMATION GRID
+
+   ROLE | PERIOD | TYPE | STATUS
+= */
+
+.project-info-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+}
+
+
+
+/* Individual information cell */
+
+.project-info-item {
+  min-height: 88px;
+
+  padding:
+    22px
+    20px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  gap: 10px;
+}
+
+
+
+/* Vertical dividers */
+
+.project-info-item + .project-info-item {
+  border-left:
+    1px
+    solid
+    var(--color-border);
+}
+
+
+
+/* Small heading */
+
+.project-info-label {
+  font-family: var(--font-mono);
+
+  font-size: 12px;
+
+  font-weight: 500;
+
+  letter-spacing: 0.07em;
+
+  text-transform: uppercase;
+
+  color: var(--color-text-gray);
+}
+
+
+
+/* Main metadata değeri */
+
+.project-info-value {
+  font-family: var(--font-sans);
+
+  font-size: 16px;
+
+  font-weight: 500;
+
+  line-height: 1.4;
+}
+
+
+
+/* 
+   PROJECT TAG ROW
+ */
+.project-detail-tags {
+
+  padding:
+    16px
+    20px;
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 7px;
+
+  border-top:
+    1px
+    solid
+    var(--color-border);
+}
+
+
+
+/* Individual tag */
+
+
+
+/* 
+   DESIGN WORK SECTION
+ */
+
+.design-work-section {
+  width: 100%;
+
+  padding:
+    120px
+    var(--page-padding)
+    100px;
+}
+
+
+/* Section title */
+
+
+
+
+
+/* 
+   DESIGN WORK CARD
+ */
+
+.design-work-card {
+  width: 100%;
+
+  border:
+    1px
+    solid
+    var(--color-border);
+}
+
+
+
+/* 
+   CARD HEADER düzeni unutma
+
+   01 | PROJECT TITLE — DIARY FOR APP
+ */
+
+.design-work-header {
+  min-height: 54px;
+
+  padding:
+    0
+    20px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  background-color: var(--color-card-header);
+
+  border-bottom:
+    1px
+    solid
+    var(--color-border);
+}
+
+
+.design-work-number {
+  font-family: var(--font-mono);
+
+  font-size: 12px;
+
+  color: var(--color-muted);
+}
+
+
+.design-work-divider {
+  width: 1px;
+
+  height: 20px;
+
+  background-color: var(--color-border);
+}
+
+
+.design-work-name {
+  font-family: var(--font-mono);
+
+  font-size: 12px;
+
+  font-weight: 500;
+
+  letter-spacing: 0.04em;
+
+  text-transform: uppercase;
+}
+
+
+
+/* 
+   CARD CONTENT
+
+  sol = text
+  sağ = screens
+ */
+
+.design-work-content {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(460px, 1fr);
+
+  column-gap: 60px;
+
+  padding:
+    52px
+    20px
+    28px;
+
+  align-items: start;
+}
+
+
+
+/* 
+   Sol tarafa 
+ */
+
+.design-work-copy {
+  max-width: 650px;
+}
+
+
+.design-work-copy p {
+  margin:
+    0
+    0
+    28px;
+
+  font-family: var(--font-sans);
+
+  font-size: 15px;
+
+  font-weight: 300;
+
+  line-height: 1.65;
+
+  color: var(--color-muted);
+}
+
+
+.design-work-copy p:last-of-type {
+  margin-bottom: 30px;
+}
+
+
+
+/* 
+   TAGS
+ */
+
+.design-work-tags {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 7px;
+
+  margin-bottom: 28px;
+}
+
+
+
+
+
+
+/* 
+   ViEW PROTOTYPE BUTTON
+ */
+
+.design-work-link {
+  min-height: 40px;
+
+  padding:
+    0
+    16px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  border:
+    1px
+    solid
+    var(--color-border);
+
+  font-family: var(--font-mono);
+
+  font-size: 12px;
+
+  letter-spacing: 0.08em;
+
+  text-transform: uppercase;
+
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+
+.design-work-link:hover {
+  background-color: var(--color-text);
+
+  color: var(--color-white);
+}
+
+
+.design-work-link-icon {
+  width: 11px;
+
+  height: 11px;
+
+  fill: none;
+
+  stroke: currentColor;
+
+  stroke-width: 1.08333;
+
+  stroke-linecap: round;
+
+  stroke-linejoin: round;
+
+  flex-shrink: 0;
+}
+
+
+
+/* 
+   RIGHT SiDE — VISUALS
+ */
+
+.design-work-visuals {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 22px;
+
+  align-items: end;
+}
+
+
+.design-work-screen {
+  width: 100%;
+
+  height: auto;
+
+  display: block;
+}
+
+/* Visual Work Section: illustration ve character design çalışmalarının ana alanı */
+
+.visual-work-section {
+  width: 100%;
+
+  padding:
+    120px
+    var(--page-padding)
+    100px;
+}
+
+
+/* Section Title: Visual Work başlığının görünümü */
+
+
+
+
+/* Visual Work Card: her visual work projesinin ortak kart yapısı */
+
+.visual-work-card {
+  width: 100%;
+
+  border:
+    1px
+    solid
+    var(--color-border);
+}
+
+
+/* Card Spacing: iki kart arasındaki boşluğu oluşturur */
+
+.visual-work-card + .visual-work-card {
+  margin-top: 28px;
+}
+
+
+/* Header: kartın üst bilgi satırı */
+
+.visual-work-header {
+  min-height: 54px;
+
+  padding:
+    0
+    18px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 20px;
+
+  background-color: var(--color-card-header);
+
+  border-bottom:
+    1px
+    solid
+    var(--color-border);
+}
+
+
+/* Header Left: numara, divider ve başlığı aynı satırda tutar */
+
+.visual-work-header-left {
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+}
+
+
+/* Number: 01 ve 02 gibi proje numaraları */
+
+.visual-work-number {
+  font-family: var(--font-mono);
+
+  font-size: 12px;
+
+  color: var(--color-muted);
+}
+
+
+/* Divider: numara ile proje başlığı arasındaki küçük dikey çizgi */
+
+.visual-work-divider {
+  width: 1px;
+
+  height: 20px;
+
+  background-color: var(--color-border);
+}
+
+
+/* Name: proje başlığı */
+
+.visual-work-name {
+  font-family: var(--font-mono);
+
+  font-size: 12px;
+
+  font-weight: 500;
+
+  letter-spacing: 0.04em;
+
+  text-transform: uppercase;
+}
+
+
+/* Tool Label: headerın sağ tarafındaki kullanılan program bilgisi */
+
+.visual-work-tool {
+  padding:
+    5px
+    9px;
+
+  border:
+    1px
+    solid
+    var(--color-border);
+
+  font-family: var(--font-mono);
+
+  font-size: 12px;
+
+  color: var(--color-muted);
+
+  white-space: nowrap;
+}
+
+
+/* Content: solda metin, sağda görseller olacak şekilde iki kolon oluşturur */
+
+.visual-work-content {
+  display: grid;
+
+  grid-template-columns:
+    minmax(280px, 0.58fr)
+    minmax(0, 1.42fr);
+
+  column-gap: 54px;
+
+  padding:
+    26px
+    18px
+    28px;
+
+  align-items: start;
+}
+
+
+/* Copy: sol taraftaki açıklama alanı */
+
+.visual-work-copy {
+  max-width: 430px;
+}
+
+
+/* Paragraph: açıklama metinleri */
+
+.visual-work-copy p {
+  margin:
+    0
+    0
+    24px;
+
+  font-family: var(--font-sans);
+
+  font-size: 16px;
+
+  font-weight: 300;
+
+  line-height: 1.6;
+
+  color: var(--color-muted);
+}
+
+
+.visual-work-copy p:last-of-type {
+  margin-bottom: 24px;
+}
+
+
+/* Tags: etiketleri yan yana ve gerektiğinde alt satıra geçirir */
+
+.visual-work-tags {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 6px;
+}
+
+
+/* Tag: ortak visual work etiketi */
+
+
+
+
+/* Illustration Visual: illustration board assetinin containerı */
+
+.illustration-visual {
+  width: 100%;
+}
+
+
+/* Desktop Visual: desktopta tek büyük grid görünür */
+
+.illustration-visual-desktop {
+  display: block;
+}
+
+
+/* Mobile Visual: desktopta mobile exportlar gizlenir */
+
+.illustration-visual-mobile {
+  display: none;
+}
+
+
+/* Illustration Image: SVG'nin container genişliğine uyum sağlamasını sağlar */
+
+.illustration-grid-image {
+  display: block;
+
+  width: 100%;
+
+  height: auto;
+}
+
+
+/* Character Visuals: iki karakter görselini yan yana yerleştirir */
+
+.character-visuals {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 14px;
+
+  align-items: stretch;
+}
+
+
+/* Character Image: SVG oranını bozmadan container içine yerleşir */
+
+.character-image {
+  display: block;
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: contain;
+}
+
+/* Character Animation Section: motion design bölümünün ana alanı */
+
+.character-animation-section {
+  width: 100%;
+
+  padding:
+    120px
+    var(--page-padding)
+    100px;
+}
+
+
+/* Section Title: Character Animation başlığının görünümü */
+
+
+
+
+/* Animation Card: section içindeki ana kart yapısı */
+
+.character-animation-card {
+  width: 100%;
+
+  border:
+    1px
+    solid
+    var(--color-border);
+}
+
+
+/* Header: kartın üst bilgi alanı */
+
+.character-animation-header {
+  min-height: 54px;
+
+  padding:
+    0
+    18px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 20px;
+
+  background-color: var(--color-card-header);
+
+  border-bottom:
+    1px
+    solid
+    var(--color-border);
+}
+
+
+/* Header Left: numara, divider ve başlığı bir arada tutar */
+
+.character-animation-header-left {
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+}
+
+
+/* Number: 01 bilgisi */
+
+.character-animation-number {
+  font-family: var(--font-mono);
+
+  font-size: 12px;
+
+  color: var(--color-muted);
+}
+
+
+/* Divider: numara ile başlık arasındaki dikey çizgi */
+
+.character-animation-divider {
+  width: 1px;
+
+  height: 20px;
+
+  background-color: var(--color-border);
+}
+
+
+/* Name: kart başlığı */
+
+.character-animation-name {
+  font-family: var(--font-mono);
+
+  font-size: 12px;
+
+  font-weight: 500;
+
+  letter-spacing: 0.04em;
+
+  text-transform: uppercase;
+}
+
+
+/* Tools: sağ taraftaki tool etiketlerini yan yana tutar */
+
+.character-animation-tools {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  justify-content: flex-end;
+
+  gap: 7px;
+}
+
+
+/* Tool: tek tek program label görünümü */
+
+.character-animation-tool {
+  padding:
+    5px
+    9px;
+
+  border:
+    1px
+    solid
+    var(--color-border);
+
+  font-family: var(--font-mono);
+
+  font-size: 12px;
+
+  color: var(--color-muted);
+
+  white-space: nowrap;
+}
+
+
+/* Content: solda açıklama, sağda GIF olacak şekilde iki kolon oluşturur */
+
+.character-animation-content {
+  display: grid;
+
+  grid-template-columns:
+    minmax(280px, 0.58fr)
+    minmax(0, 1.42fr);
+
+  column-gap: 54px;
+
+  padding:
+    34px
+    18px
+    36px;
+
+  align-items: start;
+}
+
+
+/* Copy: sol metin alanı */
+
+.character-animation-copy {
+  max-width: 430px;
+}
+
+
+/* Paragraph: animation açıklaması */
+
+.character-animation-copy p {
+  margin:
+    0
+    0
+    26px;
+
+  font-family: var(--font-sans);
+
+  font-size: 16px;
+
+  font-weight: 300;
+
+  line-height: 1.65;
+
+  color: var(--color-muted);
+}
+
+
+/* Tags: animation taglerini alt alta taşmadan sıralar */
+
+.character-animation-tags {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 6px;
+}
+
+
+/* Tag: tek tag görünümü */
+
+
+
+
+/* Animation Visual: GIF containerı */
+
+.character-animation-visual {
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+
+/* Animation GIF: responsive kalır ve oranı bozulmaz */
+
+.character-animation-gif {
+  display: block;
+
+  width: 100%;
+
+  max-width: 560px;
+
+  height: auto;
+}
+
+/* Project Footer: project detail sayfalarının alt navigasyon alanı */
+
+.project-footer {
+  width: 100%;
+
+  min-height: 96px;
+
+  padding:
+    0
+    var(--page-padding);
+
+  display: grid;
+
+  grid-template-columns:
+    1fr
+    auto
+    1fr;
+
+  align-items: center;
+
+  border-top:
+    1px
+    solid
+    var(--color-border);
+}
+
+
+/* Footer Link: Back ve Next Project linklerinin ortak görünümü */
+
+.project-footer-link {
+  width: fit-content;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  font-family: var(--font-mono);
+
+  font-size: 12px;
+
+  font-weight: 500;
+
+  letter-spacing: 0.06em;
+
+  text-transform: uppercase;
+
+  color: var(--color-muted);
+
+  transition: opacity 0.2s ease;
+}
+
+
+.project-footer-link:hover {
+  opacity: 0.55;
+}
+
+
+/* Back Link: sol tarafa hizalanır */
+
+.project-footer-back {
+  justify-self: start;
+}
+
+
+/* Next Project Link: sağ tarafa hizalanır */
+
+.project-footer-next {
+  justify-self: end;
+}
+
+
+/* Copyright: footerın gerçek merkezinde kalır */
+
+.project-footer-copyright {
+  margin: 0;
+
+  justify-self: center;
+
+  font-family: var(--font-mono);
+
+  font-size: 12px;
+
+  font-weight: 400;
+
+  letter-spacing: 0.06em;
+
+  text-transform: uppercase;
+
+  color: var(--color-muted);
+
+  white-space: nowrap;
+}
+
+
+/* Back Icon: export ettiğin arrow-back SVG */
+
+.project-footer-back-icon {
+  display: block;
+
+  width: 13px;
+  height: 13px;
+
+  object-fit: contain;
+
+  flex-shrink: 0;
+}
+
+
+/* Next Project Icon: text rengiyle birlikte değişen inline SVG */
+
+.project-footer-next-icon {
+  width: 12px;
+  height: 12px;
+
+  fill: none;
+
+  stroke: currentColor;
+
+  stroke-width: 1.08333;
+
+  stroke-linecap: round;
+
+  stroke-linejoin: round;
+
+  flex-shrink: 0;
+}
