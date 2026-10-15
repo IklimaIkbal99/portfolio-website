@@ -2906,33 +2906,310 @@ body {
   white-space: normal;
 }
 
-/* Visual Work Mobile: desktop iki kolonlu yapıyı mobileda tek kolona çevirir */
+/* Breathment Mobile: project detail sayfasını küçük ekran için yeniden düzenler */
 
-.visual-work-section {
-  padding-top: 80px;
+.breathment-page .project-header {
+  height: auto;
 
-  padding-bottom: 80px;
+  min-height: 64px;
+
+  padding:
+    14px
+    var(--page-padding);
+
+  grid-template-columns:
+    1fr
+    auto
+    1fr;
 }
 
 
-/* Section Title Mobile: başlık mobile için biraz küçülür */
+/* Header Links Mobile: uzun yazıların navbarı bozmasını önler */
 
-.visual-work-title {
+.breathment-page .project-header-link {
+  font-size: 7px;
+
+  gap: 6px;
+}
+
+
+.breathment-page .project-header-logo {
+  font-size: 10px;
+}
+
+
+.breathment-page .project-back-icon,
+.breathment-page .project-header-icon {
+  width: 10px;
+  height: 10px;
+}
+
+
+
+/* Project Overview Mobile: title ve description artık yan yana değil alt alta */
+
+.breathment-page .project-overview {
+  padding:
+    72px
+    var(--page-padding)
+    70px;
+}
+
+
+.breathment-page .project-intro {
+  display: flex;
+
+  flex-direction: column;
+
+  width: 100%;
+
+  gap: 30px;
+
+  margin-bottom: 48px;
+}
+
+
+.breathment-page .project-detail-title {
+  width: 100%;
+
+  font-size: 48px;
+
+  line-height: 1;
+}
+
+
+.breathment-page .project-detail-description {
+  width: 100%;
+
+  max-width: none;
+
+  font-size: 15px;
+
+  line-height: 1.6;
+}
+
+
+
+/* Project Info Mobile: desktop 4 kolon yerine 2x2 grid */
+
+.breathment-page .project-info-grid {
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+}
+
+
+.breathment-page .project-info-item {
+  min-height: 94px;
+
+  padding:
+    18px
+    14px;
+}
+
+
+/* Desktop sadece yatay divider kullanıyordu.
+   Mobile 2x2 yapıda hem yatay hem dikey border gerekir. */
+
+.breathment-page .project-info-item + .project-info-item {
+  border-left: none;
+}
+
+
+.breathment-page .project-info-item:nth-child(even) {
+  border-left:
+    1px
+    solid
+    var(--color-border);
+}
+
+
+.breathment-page .project-info-item:nth-child(n + 3) {
+  border-top:
+    1px
+    solid
+    var(--color-border);
+}
+
+
+.breathment-page .project-info-label {
+  font-size: 8px;
+}
+
+
+.breathment-page .project-info-value {
+  font-size: 14px;
+}
+
+
+
+/* Overview Tags Mobile */
+
+.breathment-page .project-detail-tags {
+  padding:
+    16px
+    14px;
+
+  gap: 6px;
+}
+
+
+.breathment-page .project-detail-tag {
+  font-size: 8px;
+}
+
+
+
+/* Design Work Mobile */
+
+.breathment-page .design-work-section {
+  padding:
+    80px
+    var(--page-padding);
+}
+
+
+.breathment-page .design-work-title {
   margin-bottom: 36px;
 
-  font-size: 34px;
+  font-size: 38px;
 }
 
 
-/* Header Mobile: uzun içeriklerin taşmasını engeller */
+/* Card Header Mobile */
 
-.visual-work-header {
+.breathment-page .design-work-header {
+  min-height: auto;
+
+  padding:
+    16px
+    14px;
+
+  flex-wrap: wrap;
+
+  gap: 10px;
+}
+
+
+.breathment-page .design-work-name {
+  font-size: 9px;
+}
+
+
+
+/* Card Content Mobile: desktop iki kolon yerine tamamen vertical */
+
+.breathment-page .design-work-content {
+  display: flex;
+
+  flex-direction: column;
+
+  width: 100%;
+
+  gap: 30px;
+
+  padding:
+    26px
+    14px;
+}
+
+
+/* Copy Mobile: artık dar desktop kolonu kullanılmaz */
+
+.breathment-page .design-work-copy {
+  width: 100%;
+
+  max-width: none;
+}
+
+
+.breathment-page .design-work-copy p {
+  width: 100%;
+
+  margin-bottom: 22px;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+}
+
+
+/* Design Work Tags */
+
+.breathment-page .design-work-tags {
+  width: 100%;
+
+  margin-bottom: 22px;
+
+  gap: 6px;
+}
+
+
+
+/* Prototype CTA */
+
+.breathment-page .design-work-link {
+  width: fit-content;
+
+  min-height: 38px;
+}
+
+
+
+/* App Screens Mobile: üç ekran artık yan yana sıkışmaz */
+
+.breathment-page .design-work-visuals {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 8px;
+
+  align-items: end;
+}
+
+
+.breathment-page .design-work-screen {
+  display: block;
+
+  width: 100%;
+
+  max-width: none;
+
+  height: auto;
+}
+
+
+
+/* Visual Work Mobile */
+
+.breathment-page .visual-work-section {
+  padding:
+    80px
+    var(--page-padding);
+}
+
+
+.breathment-page .visual-work-title {
+  margin-bottom: 36px;
+
+  font-size: 38px;
+}
+
+
+/* Visual Work Card Header */
+
+.breathment-page .visual-work-header {
   min-height: auto;
 
   padding:
     14px;
 
-  flex-wrap: wrap;
+  display: flex;
+
+  flex-direction: column;
 
   align-items: flex-start;
 
@@ -2940,100 +3217,284 @@ body {
 }
 
 
-/* Header Left Mobile: proje başlığı kendi alanında kalır */
+.breathment-page .visual-work-header-left {
+  width: 100%;
 
-.visual-work-header-left {
   min-width: 0;
 }
 
 
-/* Tool Label Mobile: gerekirse ikinci satıra geçebilir */
+.breathment-page .visual-work-tool {
+  width: fit-content;
 
-.visual-work-tool {
   white-space: normal;
 }
 
 
-/* Content Mobile: metin ve görseller alt alta yerleşir */
 
-.visual-work-content {
+/* Visual Work Content: copy ve visual alt alta */
+
+.breathment-page .visual-work-content {
   display: flex;
 
   flex-direction: column;
 
-  gap: 30px;
+  width: 100%;
+
+  gap: 28px;
 
   padding:
-    22px
-    14px
-    26px;
+    26px
+    14px;
 }
 
 
-/* Copy Mobile: metin artık tam genişliği kullanır */
-
-.visual-work-copy {
+.breathment-page .visual-work-copy {
   width: 100%;
 
   max-width: none;
 }
 
 
-/* Paragraph Mobile: küçük ekrana uygun metin boyutu */
+.breathment-page .visual-work-copy p {
+  width: 100%;
 
-.visual-work-copy p {
-  font-size: 16px;
+  font-size: 14px;
 
   line-height: 1.6;
 }
 
 
-/* Desktop Illustration: mobileda büyük desktop board gizlenir */
+/* Tags */
 
-.illustration-visual-desktop {
+.breathment-page .visual-work-tags {
+  width: 100%;
+
+  gap: 6px;
+}
+
+
+
+/* Illustration Responsive Assets:
+   desktop board gizlenir, mobile için export edilen iki board görünür */
+
+.breathment-page .illustration-visual-desktop {
   display: none;
 }
 
 
-/* Mobile Illustration: iki 3x4 SVG alt alta gösterilir */
-
-.illustration-visual-mobile {
+.breathment-page .illustration-visual-mobile {
   display: flex;
 
   flex-direction: column;
 
   width: 100%;
 
-  gap: 14px;
+  gap: 16px;
 }
 
 
-/* Illustration Image Mobile: iki asset de tam genişlik kullanır */
+.breathment-page .illustration-grid-image {
+  display: block;
 
-.illustration-grid-image {
-  width: 100%;
-}
-
-
-/* Character Visuals Mobile: iki karakter görseli de alt alta gelir */
-
-.character-visuals {
-  display: flex;
-
-  flex-direction: column;
-
-  width: 100%;
-
-  gap: 14px;
-}
-
-
-/* Character Image Mobile: tam genişlik */
-
-.character-image {
   width: 100%;
 
   height: auto;
+}
+
+
+
+/* Character Design Visuals Mobile */
+
+.breathment-page .character-visuals {
+  display: flex;
+
+  flex-direction: column;
+
+  width: 100%;
+
+  gap: 16px;
+}
+
+
+.breathment-page .character-image {
+  width: 100%;
+
+  height: auto;
+}
+
+
+
+/* Character Animation Mobile */
+
+.breathment-page .character-animation-section {
+  padding:
+    80px
+    var(--page-padding);
+}
+
+
+.breathment-page .character-animation-title {
+  margin-bottom: 36px;
+
+  font-size: 38px;
+}
+
+
+/* Animation Header */
+
+.breathment-page .character-animation-header {
+  min-height: auto;
+
+  padding:
+    14px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+
+  gap: 12px;
+}
+
+
+.breathment-page .character-animation-tools {
+  width: 100%;
+
+  justify-content: flex-start;
+
+  gap: 6px;
+}
+
+
+.breathment-page .character-animation-tool {
+  white-space: normal;
+}
+
+
+
+/* Animation Content */
+
+.breathment-page .character-animation-content {
+  display: flex;
+
+  flex-direction: column;
+
+  width: 100%;
+
+  gap: 30px;
+
+  padding:
+    26px
+    14px;
+}
+
+
+.breathment-page .character-animation-copy {
+  width: 100%;
+
+  max-width: none;
+}
+
+
+.breathment-page .character-animation-copy p {
+  width: 100%;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+}
+
+
+
+/* GIF Mobile */
+
+.breathment-page .character-animation-visual {
+  width: 100%;
+}
+
+
+.breathment-page .character-animation-gif {
+  width: 100%;
+
+  max-width: 320px;
+
+  height: auto;
+
+  margin:
+    0
+    auto;
+}
+
+
+
+/* Project Footer Mobile: desktop 3 kolonlu footer yerine vertical yapı */
+
+/* Project Footer Mobile: navigation üstte, copyright altta */
+
+.breathment-page .project-footer {
+  width: 100%;
+
+  min-height: auto;
+
+  padding:
+    22px
+    var(--page-padding);
+
+  display: grid;
+
+  grid-template-columns:
+    1fr
+    1fr;
+
+  row-gap: 20px;
+
+  align-items: center;
+
+  border-top:
+    1px
+    solid
+    var(--color-border);
+}
+
+
+/* Back */
+
+.breathment-page .project-footer-back {
+  justify-self: start;
+}
+
+
+/* Next Project */
+
+.breathment-page .project-footer-next {
+  justify-self: end;
+}
+
+
+/* Copyright: ikinci satırın tamamını kaplar */
+
+.breathment-page .project-footer-copyright {
+  grid-column:
+    1 / -1;
+
+  justify-self: center;
+
+  margin: 0;
+
+  font-size: 7px;
+
+  text-align: center;
+
+  white-space: normal;
+}
+
+
+.breathment-page .project-footer-link {
+  font-size: 8px;
+
+  gap: 7px;
 }
 
 }
