@@ -1,0 +1,658 @@
+.city-dialogue-page .project-header-spacer {
+  justify-self: end;
+
+  width: 1px;
+  height: 1px;
+}
+
+
+.city-dialogue-page .city-dialogue-overview {
+  width: 100%;
+}
+
+
+.city-dialogue-page .project-detail-description {
+  max-width: 650px;
+}
+
+
+.city-dialogue-page .project-info-grid {
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+}
+
+.city-dialogue-design-section {
+  width: 100%;
+
+  padding:
+    120px
+    var(--page-padding)
+    100px;
+}
+
+
+.city-dialogue-section-title {
+  margin:
+    0
+    0
+    48px;
+
+  font-family:
+    var(--font-serif);
+
+  font-size: 40px;
+
+  font-weight: 400;
+
+  line-height: 1.2;
+}
+
+
+.city-dialogue-work-card {
+  width: 100%;
+
+  border:
+    1px
+    solid
+    var(--color-border);
+}
+
+
+/* Header */
+
+.city-dialogue-work-header {
+  min-height: 54px;
+
+  padding:
+    0
+    20px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  background-color:
+    var(--color-card-header);
+
+  border-bottom:
+    1px
+    solid
+    var(--color-border);
+}
+
+
+.city-dialogue-work-number {
+  font-family:
+    var(--font-mono);
+
+  font-size: 12px;
+
+  color:
+    var(--color-text-gray);
+}
+
+
+.city-dialogue-work-divider {
+  width: 1px;
+
+  height: 20px;
+
+  background-color:
+    var(--color-border);
+}
+
+
+.city-dialogue-work-name {
+  font-family:
+    var(--font-mono);
+
+  font-size: 12px;
+
+  font-weight: 500;
+
+  letter-spacing: 0.04em;
+
+  text-transform: uppercase;
+}
+
+
+/* Content */
+
+.city-dialogue-work-content {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(420px, 1fr);
+
+  column-gap: 64px;
+
+  align-items: center;
+
+  padding:
+    36px
+    20px;
+}
+
+
+.city-dialogue-work-copy {
+  max-width: 620px;
+}
+
+
+.city-dialogue-work-copy p {
+  margin:
+    0
+    0
+    30px;
+
+  font-family:
+    var(--font-sans);
+
+  font-size: 16px;
+
+  font-weight: 300;
+
+  line-height: 1.65;
+
+  color:
+    var(--color-text-gray);
+}
+
+
+.city-dialogue-work-copy p:last-of-type {
+  margin-bottom: 28px;
+}
+
+
+/* Tags */
+
+.city-dialogue-work-tags {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 7px;
+}
+
+
+.city-dialogue-work-tag {
+  min-height: 28px;
+
+  padding:
+    0
+    10px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  border:
+    1px
+    solid
+    var(--color-border);
+
+  font-family:
+    var(--font-mono);
+
+  font-size: 12px;
+
+  letter-spacing: 0.04em;
+}
+
+
+/* Video frame */
+
+.city-dialogue-video-frame {
+  width: 100%;
+
+  padding: 18px;
+
+  border:
+    1px
+    solid
+    var(--color-text-gray);
+
+  border-radius: 28px;
+}
+
+
+/* Video wrapper */
+
+.city-dialogue-video-wrapper {
+  position: relative;
+
+  width: 100%;
+
+  overflow: hidden;
+
+  border-radius: 18px;
+
+  background-color: #11153f;
+}
+
+
+/* Video */
+
+.city-dialogue-about-video {
+  display: block;
+
+  width: 100%;
+
+  height: auto;
+
+  aspect-ratio: 16 / 9;
+
+  object-fit: cover;
+
+  cursor: pointer;
+}
+
+
+/* Play button */
+
+.city-dialogue-video-toggle {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  transform:
+    translate(-50%, -50%);
+
+  width: 76px;
+  height: 76px;
+
+  padding: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border: 0;
+
+  background: transparent;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+
+.city-dialogue-video-toggle:hover {
+  transform:
+    translate(-50%, -50%)
+    scale(1.08);
+}
+
+
+.city-dialogue-video-toggle.is-hidden {
+  opacity: 0;
+
+  pointer-events: none;
+}
+
+
+.city-dialogue-video-play-icon {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
+
+.city-dialogue-touchpoints-section {
+  width: 100%;
+
+  padding:
+    120px
+    var(--page-padding)
+    100px;
+}
+
+
+.city-dialogue-touchpoint-card {
+  width: 100%;
+
+  border:
+    1px
+    solid
+    var(--color-border);
+}
+
+
+.city-dialogue-touchpoint-header {
+  min-height: 54px;
+
+  padding:
+    0
+    18px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 20px;
+
+  background-color:
+    var(--color-card-header);
+
+  border-bottom:
+    1px
+    solid
+    var(--color-border);
+}
+
+
+.city-dialogue-touchpoint-header-left {
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+}
+
+
+.city-dialogue-touchpoint-number {
+  font-family:
+    var(--font-mono);
+
+  font-size: 12px;
+
+  color:
+    var(--color-text-gray);
+}
+
+
+.city-dialogue-touchpoint-divider {
+  width: 1px;
+
+  height: 20px;
+
+  background-color:
+    var(--color-border);
+}
+
+
+.city-dialogue-touchpoint-name {
+  font-family:
+    var(--font-mono);
+
+  font-size: 12px;
+
+  font-weight: 500;
+
+  letter-spacing: 0.04em;
+
+  text-transform: uppercase;
+}
+
+
+.city-dialogue-touchpoint-tool {
+  padding:
+    5px
+    9px;
+
+  border:
+    1px
+    solid
+    var(--color-border);
+
+  font-family:
+    var(--font-mono);
+
+  font-size: 12px;
+
+  color:
+    var(--color-text-gray);
+
+  white-space: nowrap;
+}
+
+
+.city-dialogue-touchpoint-content {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 0.9fr)
+    minmax(420px, 1.1fr);
+
+  column-gap: 64px;
+
+  align-items: center;
+
+  padding:
+    30px
+    18px;
+}
+
+
+.city-dialogue-touchpoint-copy {
+  max-width: 560px;
+}
+
+
+.city-dialogue-touchpoint-copy p {
+  margin:
+    0
+    0
+    24px;
+
+  font-family:
+    var(--font-sans);
+
+  font-size: 16px;
+
+  font-weight: 300;
+
+  line-height: 1.6;
+
+  color:
+    var(--color-text-gray);
+}
+
+
+.city-dialogue-touchpoint-tags {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 6px;
+
+  margin-bottom: 20px;
+}
+
+
+.city-dialogue-touchpoint-tag {
+  min-height: 28px;
+
+  padding:
+    0
+    10px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  border:
+    1px
+    solid
+    var(--color-border);
+
+  font-family:
+    var(--font-mono);
+
+  font-size: 12px;
+
+  letter-spacing: 0.04em;
+}
+
+
+.city-dialogue-touchpoint-link {
+  min-height: 40px;
+
+  padding:
+    0
+    16px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  border:
+    1px
+    solid
+    var(--color-border);
+
+  font-family:
+    var(--font-mono);
+
+  font-size: 12px;
+
+  letter-spacing: 0.08em;
+
+  text-transform: uppercase;
+
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+
+.city-dialogue-touchpoint-link:hover {
+  background-color:
+    var(--color-text);
+
+  color:
+    var(--color-white);
+}
+
+
+.city-dialogue-touchpoint-link-icon {
+  width: 11px;
+  height: 11px;
+
+  fill: none;
+
+  stroke:
+    currentColor;
+
+  stroke-width: 1.08333;
+
+  stroke-linecap: round;
+
+  stroke-linejoin: round;
+
+  flex-shrink: 0;
+}
+
+
+.city-dialogue-touchpoint-visual {
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+
+.city-dialogue-touchpoint-image {
+  display: block;
+
+  width: 100%;
+
+  max-width: 760px;
+
+  height: auto;
+
+  object-fit: contain;
+}
+
+.city-dialogue-ia-section {
+  width: 100%;
+  padding: 120px var(--page-padding) 120px;
+}
+
+
+.city-dialogue-ia-card {
+  width: 100%;
+  border: 1px solid var(--color-border);
+}
+
+
+.city-dialogue-ia-header {
+  min-height: 54px;
+  padding: 0 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  background-color: var(--color-card-header);
+  border-bottom: 1px solid var(--color-border);
+}
+
+
+.city-dialogue-ia-header-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+
+.city-dialogue-ia-number {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--color-text-gray);
+}
+
+
+.city-dialogue-ia-divider {
+  width: 1px;
+  height: 20px;
+  background-color: var(--color-border);
+}
+
+
+.city-dialogue-ia-name {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+
+.city-dialogue-ia-tool {
+  padding: 5px 9px;
+  border: 1px solid var(--color-border);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--color-text-gray);
+  white-space: nowrap;
+}
+
+
+.city-dialogue-ia-body {
+  padding: 22px 18px 18px;
+}
+
+
+.city-dialogue-ia-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}

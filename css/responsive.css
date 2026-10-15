@@ -2318,6 +2318,474 @@ body {
   height: 9px;
 }
 
+
+/* ==========================================================
+   CITY DIALOGUE PAGE — MOBILE
+========================================================== */
+
+
+/* Project Header */
+
+.city-dialogue-page .project-header {
+  min-height: 64px;
+  height: auto;
+
+  padding:
+    14px
+    var(--page-padding);
+}
+
+
+.city-dialogue-page .project-header-link {
+  font-size: 8px;
+
+  gap: 6px;
+}
+
+
+.city-dialogue-page .project-header-logo {
+  font-size: 10px;
+}
+
+
+.city-dialogue-page .project-back-icon {
+  width: 10px;
+  height: 10px;
+}
+
+
+
+/* ==========================================================
+   PROJECT OVERVIEW
+========================================================== */
+
+.city-dialogue-page .project-overview {
+  padding:
+    72px
+    var(--page-padding)
+    70px;
+}
+
+
+.city-dialogue-page .project-intro {
+  display: flex;
+
+  flex-direction: column;
+
+  width: 100%;
+
+  gap: 30px;
+
+  margin-bottom: 48px;
+}
+
+
+.city-dialogue-page .project-detail-title {
+  width: 100%;
+
+  font-size: 44px;
+
+  line-height: 1;
+}
+
+
+.city-dialogue-page .project-detail-description {
+  width: 100%;
+
+  max-width: none;
+
+  font-size: 15px;
+
+  line-height: 1.6;
+}
+
+
+
+/* Project Info: 4 columns → 2x2 grid */
+
+.city-dialogue-page .project-info-grid {
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+}
+
+
+.city-dialogue-page .project-info-item {
+  min-height: 94px;
+
+  padding:
+    18px
+    14px;
+}
+
+
+.city-dialogue-page .project-info-item + .project-info-item {
+  border-left: none;
+}
+
+
+.city-dialogue-page .project-info-item:nth-child(even) {
+  border-left:
+    1px
+    solid
+    var(--color-border);
+}
+
+
+.city-dialogue-page .project-info-item:nth-child(n + 3) {
+  border-top:
+    1px
+    solid
+    var(--color-border);
+}
+
+
+.city-dialogue-page .project-info-label {
+  font-size: 9px;
+}
+
+
+.city-dialogue-page .project-info-value {
+  font-size: 14px;
+}
+
+
+.city-dialogue-page .project-detail-tags {
+  padding:
+    16px
+    14px;
+
+  gap: 6px;
+}
+
+
+
+/* ==========================================================
+   SHARED CITY DIALOGUE SECTIONS
+========================================================== */
+
+.city-dialogue-page .city-dialogue-design-section,
+.city-dialogue-page .city-dialogue-touchpoints-section,
+.city-dialogue-page .city-dialogue-ia-section {
+  padding:
+    80px
+    var(--page-padding);
+}
+
+
+.city-dialogue-page .city-dialogue-section-title {
+  margin-bottom: 36px;
+
+  font-size: 36px;
+
+  line-height: 1.2;
+}
+
+
+
+/* ==========================================================
+   DESIGN WORK / ABOUT CITYDIALOGUE
+========================================================== */
+
+.city-dialogue-page .city-dialogue-work-header {
+  min-height: auto;
+
+  padding:
+    15px
+    14px;
+}
+
+
+.city-dialogue-page .city-dialogue-work-content {
+  display: flex;
+
+  flex-direction: column;
+
+  width: 100%;
+
+  gap: 30px;
+
+  padding:
+    26px
+    14px;
+}
+
+
+.city-dialogue-page .city-dialogue-work-copy {
+  width: 100%;
+
+  max-width: none;
+}
+
+
+.city-dialogue-page .city-dialogue-work-copy p {
+  width: 100%;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+}
+
+
+.city-dialogue-page .city-dialogue-work-tags {
+  gap: 6px;
+}
+
+
+
+/* ==========================================================
+   VIDEO
+========================================================== */
+
+.city-dialogue-page .city-dialogue-video-frame {
+  width: 100%;
+
+  padding: 8px;
+
+  border-radius: 18px;
+}
+
+
+.city-dialogue-page .city-dialogue-video-wrapper {
+  width: 100%;
+
+  border-radius: 12px;
+}
+
+
+.city-dialogue-page .city-dialogue-about-video {
+  width: 100%;
+
+  height: auto;
+}
+
+
+.city-dialogue-page .city-dialogue-video-toggle {
+  width: 52px;
+  height: 52px;
+}
+
+
+
+/* ==========================================================
+   TOUCHPOINTS
+========================================================== */
+
+.city-dialogue-page .city-dialogue-touchpoint-header {
+  min-height: auto;
+
+  padding:
+    14px;
+
+  flex-wrap: wrap;
+
+  gap: 10px;
+}
+
+
+.city-dialogue-page .city-dialogue-touchpoint-header-left {
+  min-width: 0;
+}
+
+
+.city-dialogue-page .city-dialogue-touchpoint-tool {
+  font-size: 9px;
+}
+
+
+.city-dialogue-page .city-dialogue-touchpoint-content {
+  display: flex;
+
+  flex-direction: column;
+
+  width: 100%;
+
+  gap: 30px;
+
+  padding:
+    26px
+    14px;
+}
+
+
+.city-dialogue-page .city-dialogue-touchpoint-copy {
+  width: 100%;
+
+  max-width: none;
+}
+
+
+.city-dialogue-page .city-dialogue-touchpoint-copy p {
+  width: 100%;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+}
+
+
+.city-dialogue-page .city-dialogue-touchpoint-tags {
+  margin-bottom: 18px;
+}
+
+
+.city-dialogue-page .city-dialogue-touchpoint-visual {
+  width: 100%;
+
+  padding-top: 6px;
+
+  display: flex;
+
+  justify-content: center;
+}
+
+
+.city-dialogue-page .city-dialogue-touchpoint-image {
+  display: block;
+
+  width: 100%;
+
+  max-width: 100%;
+
+  height: auto;
+
+  object-fit: contain;
+}
+
+
+
+/* ==========================================================
+   INFORMATION ARCHITECTURE
+========================================================== */
+
+.city-dialogue-page .city-dialogue-ia-header {
+  min-height: auto;
+
+  padding:
+    14px;
+
+  flex-wrap: wrap;
+
+  gap: 10px;
+}
+
+
+.city-dialogue-page .city-dialogue-ia-header-left {
+  min-width: 0;
+}
+
+
+.city-dialogue-page .city-dialogue-ia-name {
+  line-height: 1.4;
+}
+
+
+.city-dialogue-page .city-dialogue-ia-tool {
+  font-size: 9px;
+}
+
+
+.city-dialogue-page .city-dialogue-ia-body {
+  width: 100%;
+
+  padding:
+    16px
+    10px;
+}
+
+
+.city-dialogue-page .city-dialogue-ia-image {
+  display: block;
+
+  width: 100%;
+
+  max-width: none;
+
+  height: auto;
+
+  object-fit: contain;
+}
+
+
+
+/* ==========================================================
+   PROJECT FOOTER
+========================================================== */
+
+.city-dialogue-page .project-footer {
+  width: 100%;
+
+  min-height: auto;
+
+  padding:
+    20px
+    var(--page-padding);
+
+  display: grid;
+
+  grid-template-columns:
+    1fr
+    1fr;
+
+  grid-template-rows:
+    auto
+    auto;
+
+  column-gap: 16px;
+  row-gap: 18px;
+
+  align-items: center;
+}
+
+
+.city-dialogue-page .project-footer-back {
+  grid-column: 1;
+  grid-row: 1;
+
+  justify-self: start;
+}
+
+
+.city-dialogue-page .project-footer-next {
+  grid-column: 2;
+  grid-row: 1;
+
+  justify-self: end;
+}
+
+
+.city-dialogue-page .project-footer-copyright {
+  grid-column:
+    1 / -1;
+
+  grid-row: 2;
+
+  justify-self: center;
+
+  margin: 0;
+
+  font-size: 7px;
+
+  text-align: center;
+
+  white-space: normal;
+}
+
+
+.city-dialogue-page .project-footer-link {
+  font-size: 7px;
+
+  gap: 6px;
+
+  white-space: nowrap;
+}
+
+
+.city-dialogue-page .project-footer-back-icon,
+.city-dialogue-page .project-footer-next-icon {
+  width: 9px;
+  height: 9px;
+}
+
 }
 
 
